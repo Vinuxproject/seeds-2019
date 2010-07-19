@@ -196,7 +196,6 @@ No openoffice, need the space for other apps on the Vinux CD.
  * (usb-creator-gtk) [i386 amd64 lpia]
 # * (computer-janitor-gtk) (Not for Vinux)
 # * (pitivi) (Not for Vinux)
- * (unclutter) # see bug #16492
 
 Desktop Experience:
  * notify-osd           # backend for libnotify
