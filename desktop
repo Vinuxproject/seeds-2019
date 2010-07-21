@@ -238,7 +238,8 @@ to compile a driver. -mdz
  * (libwmf0.2-7-gtk)
  * (plymouth-theme-ubuntu-logo)
 
-Extra vinux packages.Package: vinux-default-settings
+Extra vinux packages.
+ * vinux-default-settings
  * (vinux-keyboard-shortcuts)
  * (vinux-compiz-settings)
  * (vinux-desktop-settings)
