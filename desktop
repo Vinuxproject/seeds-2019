@@ -239,7 +239,7 @@ to compile a driver. -mdz
  * (plymouth-theme-ubuntu-logo)
 
 Extra vinux packages.
- * vinux-default-settings
+ * (vinux-default-settings)
  * (vinux-keyboard-shortcuts)
  * (vinux-compiz-settings)
  * (vinux-desktop-settings)
