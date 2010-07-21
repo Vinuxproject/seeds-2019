@@ -246,3 +246,6 @@ Extra vinux packages.
  * (vinux-wallpapers)
  * (vinux-user-configs)
 
+# End-user applications to be shipped in vinux
+ * (speechd-up)
+ * (speakup)
