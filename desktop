@@ -111,7 +111,6 @@ No evlution, as other software gets put onto the Vinux CD
  * (totem-mozilla)
  * update-manager
  * update-notifier
- * gdebi                   # view/install deb packages
  * (vino) # vnc server
  * yelp
  * zenity
@@ -191,7 +190,7 @@ No openoffice, need the space for other apps on the Vinux CD.
  * (tsclient)      # rdesktop/vnc/xdmcp client gui
  * (vinagre)      # needed by tsclient
  * (tomboy) [i386 powerpc amd64 ia64 sparc armel]  # Sebastian Dröge, approved by mdz
-# * (f-spot) [i386 powerpc amd64 ia64 sparc armel]  # Andrew Mitchell, approved by mdz (Not for Vinux)
+ * (shotwell)
  * (jockey-gtk) # enable non-free graphics and other drivers easily
  * (usb-creator-gtk) [i386 amd64 lpia]
 # * (computer-janitor-gtk) (Not for Vinux)

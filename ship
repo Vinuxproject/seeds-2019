@@ -30,7 +30,6 @@ modules instead.
 
  * build-essential
  * fakeroot
- * devscripts          # Debian package development
  * bzr [i386]          # amd64 CD overflowing, and the package became a hog
 
 == Common UNIX stuff ==
@@ -79,8 +78,6 @@ Enough room on amd64 armel i386, not enough on ia64 powerpc:
  * uboot-mkimage [armel]
 
 == Transitional packages ==
-
- * mktemp # replaced by coreutils in karmic
 
 == Germinate workarounds ==
 
