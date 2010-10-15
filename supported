@@ -13,6 +13,7 @@ them as appropriate.
  * /^openoffice.org-help-/
  * /^openoffice.org-l10n-/
  * /^thunderbird-locale-/
+ * poppler-data
 
 The following input aids are also installed on demand by
 language-selector:
@@ -75,6 +76,7 @@ included due to matching Extra-Include patterns, and has no other effect):
  * Extra-Exclude: libcommons-dbcp-java-doc # depends on classpath
  * Extra-Exclude: javacc-doc # depends on classpath
  * Extra-Exclude: virtuoso-vad-doc # depends on binaries that were not MIR-approved
+ * Extra-Exclude: libgl1-mesa-dri-experimental-dbg # LP: #638097
 
 
 Transitional packages:
@@ -108,4 +110,3 @@ Temporary workarounds:
 = Build infrastructure =
 
  * pkgbinarymangler # needs to be in main to stay in the buildd chroots
- * lpia-wrapper     # needs to be in main to stay in the buildd chroots
