@@ -32,11 +32,17 @@
  * mono-classlib-1.0
  * libmono-sqlite1.0-cil
 
-== OpenOffice.org ==
+== LibreOffice ==
 
- * openoffice.org-officebean
- * openoffice.org-help-br
- * openoffice.org-l10n-br
+ * libreoffice-officebean
+ * libreoffice-nlpsolver
+ * libreoffice-help-br
+ * libreoffice-l10n-br
+ * libreoffice-filter-binfilter
+ * libreoffice-style-andromeda
+ * libreoffice-style-default
+ * libreoffice-style-industrial
+ * libreoffice-style-tango
  * libxsltc-java
 
 = Desktop =
@@ -44,19 +50,14 @@
  * xchat-gnome
  * thunderbird # world favourite mail client
  * nautilus-gksu
- * abrowser
-
- * openoffice.org-filter-binfilter
- * openoffice.org-style-andromeda
- * openoffice.org-style-default
- * openoffice.org-style-industrial
- * openoffice.org-style-tango
  * gnome-accessibility-themes-extras
 
- * icedtea6-plugin
+ * icedtea-plugin
 
  * seahorse-plugins
  * gimp
+
+ * evolution-couchdb
 
 Other:
 
@@ -64,7 +65,7 @@ Other:
  * dia-gnome           # useful but a bit specialist
  * finger
  * gftp-gtk
- * glade-gnome-3
+ * glade-gnome
  * memprof
  * xnest
  * xrestop
@@ -94,6 +95,7 @@ Other:
  * python-virtinst
  * python-gtk-vnc
  * python-urlgrabber
+ * python-desktopcouch
 
 = Console Tools =
 
@@ -191,17 +193,22 @@ These *-doc packages are in separate source packages, so Extra-Includes won't ca
  * imhangul
  * culmus
  * %texlive-lang
- * openoffice.org-help-en-gb
- * openoffice.org-l10n-en-gb
- * openoffice.org-l10n-in	# dependency package for Indian locales
- * openoffice.org-l10n-za	# dependency package for South African locales
+ * libreoffice-help-en-gb
+ * libreoffice-l10n-en-gb
+ * libreoffice-l10n-in	# dependency package for Indian locales
+ * libreoffice-l10n-za	# dependency package for South African locales
 
 = Transitional packages =
 
 It's useful to have these on the DVD so that it can be used as an
 apt source for upgrades.
 
- * ec2-init
+Keep until 12.04 LTS:
+ * compiz-fusion-plugins-main
+ * firefox-branding
+ * openprinting-ppds-extra
+ * language-selector-qt
+ * netbook-launcher
 
 = Miscellaneous =
 

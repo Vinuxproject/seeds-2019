@@ -86,11 +86,14 @@ No evlution, as other software gets put onto the Vinux CD
  * gnome-power-manager		# OliverGrawert finally ready for shipment
  * gnome-system-tools
  * gnome-terminal
- * gnome-utils
+ * baobab
+ * gnome-screenshot
+ * gnome-search-tool
+ * gnome-system-log
  * (gnome-user-guide)
  * gucharmap               # SebastienBacher
  * checkbox-gtk
- * language-selector	   # MichaelVogt
+ * language-selector-gnome # MichaelVogt
  * metacity                # SebastienBacher
  * (compiz) [i386 powerpc amd64]		   # compiz is our default WM 'mkay
  * (firefox)
@@ -99,14 +102,13 @@ No evlution, as other software gets put onto the Vinux CD
  * nautilus                # SebastienBacher
  * nautilus-sendto
  * (nautilus-share)
- * (rhythmbox)
- * (rhythmbox-ubuntuone-music-store)
+ * (banshee)
+ * (banshee-extension-ubuntuonemusicstore)
  * (brasero)		   # Oliver Grawert
  * rarian-compat
  * alacarte		   # default menu editor
  * ssh-askpass-gnome
  * synaptic                # default GUI package manager
- * libgnome2-perl          # so that the debconf GNOME frontend can be used from synaptic
  * software-properties-gtk # default GUI sources.list editor
  * (totem)
  * (totem-mozilla)
@@ -126,6 +128,7 @@ No evlution, as other software gets put onto the Vinux CD
  * (gvfs-fuse)			# let non-GNOME apps see GVFS via fuse
  * launchpad-integration	# Needed to show the launchpad menu items
  * (gnome-disk-utility)
+ * (overlay-scrollbar)
 
 Games: DOn't want these in Vinux, no use to those who can't see them.
 # * (aisleriot)
@@ -173,15 +176,14 @@ Accessibility tools:
 
 = Other Desktop GUI Apps =
 
-No openoffice, need the space for other apps on the Vinux CD.
-# * (openoffice.org-style-human) [i386 amd64 powerpc]  # before OOo to avoid openoffice.org-style-default
-# * (openoffice.org-gnome) [i386 amd64 powerpc]
-# * (openoffice.org-writer) [i386 amd64 powerpc]
-# * (openoffice.org-calc) [i386 amd64 powerpc]
-# * (openoffice.org-impress) [i386 amd64 powerpc]
-# * (openoffice.org-math) [i386 amd64 powerpc]
- #* (openoffice.org-evolution) [i386 amd64 powerpc] # pulls in oo.o-base, broken ATM
-# * (openoffice.org-help-en-us) [i386 amd64 powerpc]
+ * (libreoffice-style-human) [i386 amd64 powerpc]
+ * (libreoffice-gnome) [i386 amd64 powerpc]
+ * (libreoffice-writer) [i386 amd64 powerpc]
+ * (libreoffice-calc) [i386 amd64 powerpc]
+ * (libreoffice-impress) [i386 amd64 powerpc]
+ * (libreoffice-math) [i386 amd64 powerpc]
+ #* (libreoffice-evolution) [i386 amd64 powerpc] # pulls in libo-base
+ * (libreoffice-help-en-us) [i386 amd64 powerpc]
  * (simple-scan)
  * evince
  * (gnome-screensaver) # recommends to allow for xscreensaver to be used
@@ -198,14 +200,15 @@ No openoffice, need the space for other apps on the Vinux CD.
 # * (pitivi) (Not for Vinux)
 
 Desktop Experience:
+ * unity
  * notify-osd           # backend for libnotify
  * (indicator-messages)
 # * (evolution-indicator) (Not for Vinux
  * indicator-applet-session
+ * (ginn)
 
 Online Services:
  * (ubuntuone-client-gnome)
-# * (evolution-couchdb) (Not for Vinux)
 
 = Documentation =
 

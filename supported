@@ -10,8 +10,8 @@ them as appropriate.
 
  * /^gimp-help-/
  * /^evolution-documentation-/
- * /^openoffice.org-help-/
- * /^openoffice.org-l10n-/
+ * /^libreoffice-help-/
+ * /^libreoffice-l10n-/
  * /^thunderbird-locale-/
  * poppler-data
 
@@ -20,26 +20,22 @@ language-selector:
 
  * mozvoikko
  * openoffice.org-voikko
+ * openoffice.org-hyphenation
  * /^gnome-user-guide-/
+ * /^hyphen-..$/
+ * hyphen-en-us
+ * /^mythes-/
+
+Transitional packages:
+
+ * /^openoffice.org-help-/
+ * /^openoffice.org-l10n-/
  * /^openoffice.org-thesaurus-/
- * /^openoffice.org-hyphenation/
-
-Transitional packages for the -zh split, to be kept until after the
-next LTS after 8.04 (most likely karmic+1):
-
- * language-pack-gnome-zh-base
- * language-pack-kde-zh-base
- * language-pack-zh-base
- * language-support-fonts-zh
- * language-support-input-zh
-
-= Transitional packages for clean upgrades =
-
- * nvidia-185-modaliases # drop in lucid+1
+ * /^openoffice.org-hyphenation-/
 
 = Rescued from Extra =
 
- * Extra-Include: *-dbg *-debug *-dev *-doc *-docs *-gcj
+ * Extra-Include: *-dbg *-debug *-dev *-doc *-docs *-gcj gir1.2-* *-examples
 
 ... and some miscellaneous exclusions for things we don't want to drag in
 automatically (note that Extra-Exclude *only* prevents packages from being
@@ -77,12 +73,11 @@ included due to matching Extra-Include patterns, and has no other effect):
  * Extra-Exclude: javacc-doc # depends on classpath
  * Extra-Exclude: virtuoso-vad-doc # depends on binaries that were not MIR-approved
  * Extra-Exclude: libgl1-mesa-dri-experimental-dbg # LP: #638097
+ * Extra-Exclude: python-vigra-doc # libvigraimpex is in main, but nothing uses python-vigra
 
 
 Transitional packages:
 
- * Extra-Exclude: atm-dev
- * Extra-Exclude: mozilla-firefox-dev
  * Extra-Exclude: xserver-xorg-video-amd-dbg
 
 Exclude some KDE-specific pieces:
@@ -105,7 +100,14 @@ Exclude some KDE-specific pieces:
 
 Temporary workarounds:
 
- * openoffice.org-evolution # no rdepends any more, noticed too late
+ * libreoffice-evolution # no rdepends any more, noticed too late
+
+= Transitional packages =
+
+Keep until 12.04 LTS:
+ * abrowser-branding
+ * abrowser
+ * openoffice.org-base
 
 = Build infrastructure =
 
