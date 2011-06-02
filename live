@@ -10,14 +10,20 @@ Task-Seeds: live-common
  * Languages: en
  * language-pack-${Languages}
  * language-pack-gnome-${Languages}
- * language-support-${Languages}
 
- * Languages: es xh pt
+# subset of English language support which we want by default:
+ * firefox-locale-en
+ * libreoffice-help-en-us
+ * hunspell-en-us
+ * openoffice.org-hyphenation
+ * wamerican
+
+ * Languages: es xh pt zh-hans
  * language-pack-${Languages} [!powerpc]
  * language-pack-gnome-${Languages} [!powerpc]
 
 Enough room on i386, not enough on amd64:
- * Languages: de fr zh-hans
+ * Languages: de
  * language-pack-${Languages} [i386]
  * language-pack-gnome-${Languages} [i386]
 
@@ -36,4 +42,3 @@ These packages make up the Ubiquity live installer.
  * ubiquity-frontend-gtk
  * ubiquity-ubuntu-artwork
  * ubiquity-slideshow-ubuntu
- * python-webkit # Needed by ubiquity-frontend-gtk for ubiquity-slideshow.

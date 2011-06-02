@@ -28,6 +28,7 @@ Basic network services and Windows integration.
 = GUI infrastructure =
 
  * xterm                         # Provide a backup terminal and complete X env.
+ * libnotify-bin		 # various scripts need notify-send (such as .bashrc's "alert")
 
 Extra fonts (should be common, but not so for space reasons):
 
@@ -49,7 +50,6 @@ Input methods:
 We've chosen GNOME as our desktop user interface of choice. Rather than using the meta-packages they are deliberately expanded so that we can select things a bit better.
 
  * (apport-gtk)
- * desktop-file-utils
  * eog
 
 No evlution, as other software gets put onto the Vinux CD
@@ -62,29 +62,24 @@ No evlution, as other software gets put onto the Vinux CD
  * (empathy)
  * (telepathy-idle)        # basic IRC support for empathy
  * gcalctool
- * gconf-editor
  * gdm
+ * lightdm                 # Proposed GDM replacement for Oneiric, see https://blueprints.launchpad.net/ubuntu/+spec/desktop-o-lightdm
  * (gdm-guest-session)
  * gedit
- * gnome-about
- * gnome-applets
  * software-center
  * (app-install-data-partner)
  * (gnome-codec-install)    # new default codec installation tool (from debian)
  * (transmission-gtk)       # simple GNOME frontend for bittorrent downloads
  * gnome-control-center
  * system-config-printer-gnome
- * gnome-icon-theme
  * gnome-media
  * gnome-menus
  * gnome-nettool            # part of 2.8
- * gnome-panel
  * gnome-session
  * seahorse
  * (libpam-gnome-keyring)
  * gnome-system-monitor     # SebastienBacher
  * gnome-power-manager		# OliverGrawert finally ready for shipment
- * gnome-system-tools
  * gnome-terminal
  * baobab
  * gnome-screenshot
@@ -94,11 +89,9 @@ No evlution, as other software gets put onto the Vinux CD
  * gucharmap               # SebastienBacher
  * checkbox-gtk
  * language-selector-gnome # MichaelVogt
- * metacity                # SebastienBacher
- * (compiz) [i386 powerpc amd64]		   # compiz is our default WM 'mkay
  * (firefox)
  * (firefox-gnome-support)
- * (ubufox)                # ubuntu firefox tweaks - AlexanderSack
+ * (xul-ext-ubufox)        # ubuntu firefox tweaks - AlexanderSack
  * nautilus                # SebastienBacher
  * nautilus-sendto
  * (nautilus-share)
@@ -106,7 +99,6 @@ No evlution, as other software gets put onto the Vinux CD
  * (banshee-extension-ubuntuonemusicstore)
  * (brasero)		   # Oliver Grawert
  * rarian-compat
- * alacarte		   # default menu editor
  * ssh-askpass-gnome
  * synaptic                # default GUI package manager
  * software-properties-gtk # default GUI sources.list editor
@@ -120,7 +112,6 @@ No evlution, as other software gets put onto the Vinux CD
  * (xdg-utils)		   # useful utilities
  * xdg-user-dirs
  * xdg-user-dirs-gtk
- * pulseaudio-esound-compat
  * pulseaudio
  * (pulseaudio-module-gconf)
  * (pulseaudio-module-x11)
@@ -142,9 +133,6 @@ Games: DOn't want these in Vinux, no use to those who can't see them.
 Themes: we will ship only the very best looking themes. We won't ship everything that Debian ships, just a custom package that includes the themes we want. These packages are included for size guidance until we have Ubuntu-specific packages.
 
  * gnome-themes-selected
- * gnome-themes-ubuntu
- * gtk2-engines			# DanielHolbach (gtk2-engines were merged into one package)
- * gtk2-engines-pixbuf          # Required by some themes the user might install
  * ubuntu-artwork
  * ubuntu-sounds
  * gnome-session-canberra	# Needed to make login/logout sounds audible.
@@ -190,21 +178,17 @@ Accessibility tools:
  * xscreensaver-gl # MRS, we will only ship a subset of the screensavers from rss-glx and xscreensaver
  * xscreensaver-data # subset package for the non-gl screensavers we ship
  * screensaver-default-images
- * (tsclient)      # rdesktop/vnc/xdmcp client gui
- * (vinagre)      # needed by tsclient
+ * (vinagre)
  * (tomboy) [i386 powerpc amd64 armel]  # Sebastian Dröge, approved by mdz
  * (shotwell)
  * (jockey-gtk) # enable non-free graphics and other drivers easily
- * (usb-creator-gtk) [i386 amd64 lpia]
-# * (computer-janitor-gtk) (Not for Vinux)
-# * (pitivi) (Not for Vinux)
+ * (usb-creator-gtk) [i386 amd64]
 
 Desktop Experience:
  * unity
+ * unity-2d
  * notify-osd           # backend for libnotify
- * (indicator-messages)
-# * (evolution-indicator) (Not for Vinux
- * indicator-applet-session
+ * (evolution-indicator)
  * (ginn)
 
 Online Services:

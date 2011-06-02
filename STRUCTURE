@@ -1,11 +1,13 @@
-include platform.natty
+include platform.oneiric
 desktop: desktop-common
 ship: boot installer desktop d-i-requirements
 live: desktop live-common
-dvd-live: live
+dvd-live-langsupport: live
+dvd-live: live dvd-live-langsupport
 ship-live: boot live
 development: desktop
-dvd: ship development supported-common
+dvd-langsupport: ship
+dvd: server-ship ship development supported-common dvd-langsupport
 supported-desktop-extra: dvd dvd-live
 # make sure supported remains the last entry
 supported: dvd-live ship-live dvd language-packs supported-desktop-extra

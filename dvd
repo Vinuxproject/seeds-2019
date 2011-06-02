@@ -96,6 +96,7 @@ Other:
  * python-gtk-vnc
  * python-urlgrabber
  * python-desktopcouch
+ * pitivi
 
 = Console Tools =
 
@@ -169,8 +170,6 @@ These *-doc packages are in separate source packages, so Extra-Includes won't ca
 = Localisation =
 
  * gettext-el
- * myspell-de-de-oldspell # non-default alternative for language-support-de
- * myspell-fr # myspell-fr-gut preferred
  * ttf-alee
  * ttf-unfonts-core
  * ttf-unfonts-extra
@@ -227,7 +226,6 @@ let's just pick a few common ones
  * Languages: en es xh pt de fr
  * language-pack-${Languages}
  * language-pack-gnome-${Languages}
- * language-support-${Languages}
 
 == Blacklist ==
 
