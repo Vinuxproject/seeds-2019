@@ -40,7 +40,7 @@ Input methods:
 
  * (im-switch)
  * (ibus)
- * (ibus-gtk)
+ * (ibus-gtk3)
  * (ibus-table)
  * (ibus-pinyin)
  * (ibus-pinyin-db-android)
@@ -51,20 +51,13 @@ We've chosen GNOME as our desktop user interface of choice. Rather than using th
 
  * (apport-gtk)
  * eog
-
-No evlution, as other software gets put onto the Vinux CD
-# * (evolution)
-# * (evolution-plugins)
-# * (evolution-exchange)
-# * (evolution-webcal)
-
+ * (thunderbird)
+ * (thunderbird-gnome-support)
  * file-roller
  * (empathy)
  * (telepathy-idle)        # basic IRC support for empathy
  * gcalctool
- * gdm
  * lightdm                 # Proposed GDM replacement for Oneiric, see https://blueprints.launchpad.net/ubuntu/+spec/desktop-o-lightdm
- * (gdm-guest-session)
  * gedit
  * software-center
  * (app-install-data-partner)
@@ -85,7 +78,7 @@ No evlution, as other software gets put onto the Vinux CD
  * gnome-screenshot
  * gnome-search-tool
  * gnome-system-log
- * (gnome-user-guide)
+ * gnome-font-viewer
  * gucharmap               # SebastienBacher
  * checkbox-gtk
  * language-selector-gnome # MichaelVogt
@@ -95,12 +88,12 @@ No evlution, as other software gets put onto the Vinux CD
  * nautilus                # SebastienBacher
  * nautilus-sendto
  * (nautilus-share)
- * (banshee)
- * (banshee-extension-ubuntuonemusicstore)
+ * (banshee) [!armel]
+ * (banshee-extension-ubuntuonemusicstore) [!armel]
+ * (rhythmbox) [armel]
  * (brasero)		   # Oliver Grawert
  * rarian-compat
  * ssh-askpass-gnome
- * synaptic                # default GUI package manager
  * software-properties-gtk # default GUI sources.list editor
  * (totem)
  * (totem-mozilla)
@@ -132,10 +125,10 @@ Games: DOn't want these in Vinux, no use to those who can't see them.
 
 Themes: we will ship only the very best looking themes. We won't ship everything that Debian ships, just a custom package that includes the themes we want. These packages are included for size guidance until we have Ubuntu-specific packages.
 
- * gnome-themes-selected
  * ubuntu-artwork
  * ubuntu-sounds
  * gnome-session-canberra	# Needed to make login/logout sounds audible.
+ * dmz-cursor-theme
 
 The gstreamer0.10 packages we want to install:
 
@@ -151,16 +144,17 @@ For Ubuntu we need libsdl1.2debian-pulseaudio for the above gstreamer0.10-plugin
 Accessibility tools:
 
  * (gnome-accessibility-themes)
- * (gnome-mag)
  * (gnome-orca)
  * (onboard)
  * (brltty)
- * (brltty-x11)
  * (xcursor-themes)
- * (espeak)
  * (speech-dispatcher)
  * (mousetweaks)
- * (libgail-gnome-module) # Needed for libbonoboui/libgnomeui widget accessibility
+ * at-spi2-core
+ * libatk-adaptor
+ * (libgail-common)
+ * (libgail-3-common)
+ * (qt-at-spi)
 
 = Other Desktop GUI Apps =
 
@@ -170,28 +164,28 @@ Accessibility tools:
  * (libreoffice-calc) [i386 amd64 powerpc]
  * (libreoffice-impress) [i386 amd64 powerpc]
  * (libreoffice-math) [i386 amd64 powerpc]
- #* (libreoffice-evolution) [i386 amd64 powerpc] # pulls in libo-base
  * (libreoffice-help-en-us) [i386 amd64 powerpc]
  * (simple-scan)
  * evince
  * (gnome-screensaver) # recommends to allow for xscreensaver to be used
- * xscreensaver-gl # MRS, we will only ship a subset of the screensavers from rss-glx and xscreensaver
- * xscreensaver-data # subset package for the non-gl screensavers we ship
- * screensaver-default-images
  * (vinagre)
- * (tomboy) [i386 powerpc amd64 armel]  # Sebastian Dröge, approved by mdz
+ * (tomboy)
  * (shotwell)
  * (jockey-gtk) # enable non-free graphics and other drivers easily
  * (usb-creator-gtk) [i386 amd64]
+ * (deja-dup)
+ * xdiagnose
+ * gwibber
 
 Desktop Experience:
  * unity
  * unity-2d
  * notify-osd           # backend for libnotify
- * (evolution-indicator)
  * (ginn)
+ * (sni-qt)
 
 Online Services:
+ * (ubuntuone-control-panel-gtk)
  * (ubuntuone-client-gnome)
 
 = Documentation =

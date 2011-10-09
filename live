@@ -13,7 +13,7 @@ Task-Seeds: live-common
 
 # subset of English language support which we want by default:
  * firefox-locale-en
- * libreoffice-help-en-us
+ * libreoffice-help-en-us [i386 amd64 powerpc]
  * hunspell-en-us
  * openoffice.org-hyphenation
  * wamerican
@@ -26,11 +26,6 @@ Enough room on i386, not enough on amd64:
  * Languages: de
  * language-pack-${Languages} [i386]
  * language-pack-gnome-${Languages} [i386]
-
-We should have enough space to include all langpacks on the 1 GB armel desktop
-live images:
- * /^language-pack-[^-]+$/ [armel]
- * /^language-pack-gnome-[^-]+$/ [armel]
 
  * gparted
  * cifs-utils # Needed by casper for CIFS root=

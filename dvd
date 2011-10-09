@@ -39,7 +39,6 @@
  * libreoffice-help-br
  * libreoffice-l10n-br
  * libreoffice-filter-binfilter
- * libreoffice-style-andromeda
  * libreoffice-style-default
  * libreoffice-style-industrial
  * libreoffice-style-tango
@@ -54,10 +53,7 @@
 
  * icedtea-plugin
 
- * seahorse-plugins
  * gimp
-
- * evolution-couchdb
 
 Other:
 
@@ -65,7 +61,7 @@ Other:
  * dia-gnome           # useful but a bit specialist
  * finger
  * gftp-gtk
- * glade-gnome
+ * glade
  * memprof
  * xnest
  * xrestop
@@ -87,7 +83,6 @@ Other:
  * dict-jargon
  * dict-vera
  * sabayon            # desktop profile management
- * tomboy
  * liferea
  * gkbd-capplet      # we need to support the source anyway
  * gvfs-bin

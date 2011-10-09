@@ -15,6 +15,7 @@ them as appropriate.
  * /^thunderbird-locale-/
  * /^firefox-locale-/
  * poppler-data
+ * ibus-sunpinyin
 
 The following input aids are also installed on demand by
 language-selector:
@@ -22,7 +23,6 @@ language-selector:
  * mozvoikko
  * openoffice.org-voikko
  * openoffice.org-hyphenation
- * /^gnome-user-guide-/
  * /^hyphen-..$/
  * hyphen-en-us
  * /^mythes-/
@@ -33,6 +33,24 @@ Transitional packages:
  * /^openoffice.org-l10n-/
  * /^openoffice.org-thesaurus-/
  * /^openoffice.org-hyphenation-/
+
+Needed in main so that LP can import translations for it:
+
+ * edubuntu-live        # bug 788671
+
+Localization images:
+
+ * ubuntu-defaults-zh-cn
+
+= Installed on demand =
+
+ * ubuntuone-client-gnome
+
+= Extra server bits =
+
+ * postgresql-plperl-9.1
+ * postgresql-plpython-9.1
+ * postgresql-pltcl-9.1
 
 = Rescued from Extra =
 
@@ -102,6 +120,7 @@ Exclude some KDE-specific pieces:
 Temporary workarounds:
 
  * libreoffice-evolution # no rdepends any more, noticed too late
+ * openjade # (b-d of opensp, avoid component-mismatch on openjade-1.3)
 
 = Transitional packages =
 

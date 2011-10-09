@@ -2,16 +2,6 @@
 
  * linux [amd64 i386]
 
-== Desktop ==
-
-A small first step to comprehensive certification. Unfortunately, lsb
-includes lsb-desktop, which pulls in both gtk and qt, so we pick individual
-modules instead.
-
- * lsb-core [amd64 i386]
- * lsb-cxx [amd64 i386]
- * lsb-graphics [amd64 i386]
-
 == Server ==
 
  * ssh
@@ -25,12 +15,6 @@ modules instead.
 
  * bsd-mailx
  * vlan                   # userland tools to config 8021q support
-
-== Development ==
-
- * build-essential
- * fakeroot
- * bzr [i386]          # amd64 CD overflowing, and the package became a hog
 
 == Common UNIX stuff ==
 
@@ -52,26 +36,20 @@ modules instead.
 
 == Common language packs ==
 
- # must have
- * Languages: en es xh pt
+ * Languages: en
  * language-pack-${Languages}
  * language-pack-gnome-${Languages}
 
+ # no space on powerpc
+ * Languages: es pt
+ * language-pack-${Languages} [i386 amd64 amd64+mac]
+ * language-pack-gnome-${Languages} [i386 amd64 amd64+mac]
+
 # subset of English language support which we want by default:
  * firefox-locale-en
- * libreoffice-help-en-us
+ * libreoffice-help-en-us [i386 amd64 amd64+mac]
  * hunspell-en-us
  * openoffice.org-hyphenation
- * wamerican
-
-Enough room on amd64 armel i386, not enough on powerpc:
- * Languages: de fr bn hi zh-hans
- * language-pack-${Languages} [!powerpc]
- * language-pack-gnome-${Languages} [!powerpc]
-
- * Languages: ar ru ja
- * language-pack-${Languages} [i386]
- * language-pack-gnome-${Languages} [i386]
 
 == Installer ==
 
