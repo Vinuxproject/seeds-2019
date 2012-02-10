@@ -88,9 +88,8 @@ We've chosen GNOME as our desktop user interface of choice. Rather than using th
  * nautilus                # SebastienBacher
  * nautilus-sendto
  * (nautilus-share)
- * (banshee) [!armel]
- * (banshee-extension-ubuntuonemusicstore) [!armel]
- * (rhythmbox) [armel]
+ * (rhythmbox) [!armel]
+ * (rhythmbox-ubuntuone) [!armel]
  * (brasero)		   # Oliver Grawert
  * rarian-compat
  * ssh-askpass-gnome
@@ -169,8 +168,7 @@ Accessibility tools:
  * evince
  * (gnome-screensaver) # recommends to allow for xscreensaver to be used
  * (vinagre)
- * (tomboy)
- * (shotwell)
+# * (shotwell) # DOn't think blind people will be organising photos, can be added again later.
  * (jockey-gtk) # enable non-free graphics and other drivers easily
  * (usb-creator-gtk) [i386 amd64]
  * (deja-dup)
