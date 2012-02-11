@@ -222,3 +222,6 @@ Extra vinux packages.
 
 # End-user applications to be shipped in vinux
  * (speechd-up)
+
+Stop banshee/mono from getting on the images. Won't be a problem for precise.
+* !banshee*
