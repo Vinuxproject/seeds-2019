@@ -161,8 +161,6 @@ Accessibility tools:
  * (libreoffice-gnome) [i386 amd64 powerpc]
  * (libreoffice-writer) [i386 amd64 powerpc]
  * (libreoffice-calc) [i386 amd64 powerpc]
- * (libreoffice-impress) [i386 amd64 powerpc]
- * (libreoffice-math) [i386 amd64 powerpc]
  * (libreoffice-help-en-us) [i386 amd64 powerpc]
  * (simple-scan)
  * evince
