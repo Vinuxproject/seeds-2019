@@ -24,6 +24,8 @@ Basic network services and Windows integration.
  * (network-manager-gnome) # see NetworkRoaming spec
  * (network-manager-pptp)
  * (network-manager-pptp-gnome)
+ * (libproxy1-plugin-gsettings)
+ * (libproxy1-plugin-networkmanager)
 
 = GUI infrastructure =
 
@@ -33,8 +35,9 @@ Basic network services and Windows integration.
 Extra fonts (should be common, but not so for space reasons):
 
  * (ttf-wqy-microhei)
- * (ttf-unfonts-core)
- * (ttf-liberation)
+ * (fonts-nanum)
+ * (fonts-liberation)
+ * (cmap-adobe-japan2)           # gs-cjk-resources prefers cmap-adobe-japan1 which is much bigger; language-selector will pull in the right one for a language
 
 Input methods:
 
@@ -50,6 +53,7 @@ Input methods:
 We've chosen GNOME as our desktop user interface of choice. Rather than using the meta-packages they are deliberately expanded so that we can select things a bit better.
 
  * (apport-gtk)
+ * (whoopsie)              # http://wiki.ubuntu.com/ErrorTracker - EvanDandrea
  * eog
  * (thunderbird)
  * (thunderbird-gnome-support)
@@ -61,7 +65,6 @@ We've chosen GNOME as our desktop user interface of choice. Rather than using th
  * gedit
  * software-center
  * (app-install-data-partner)
- * (gnome-codec-install)    # new default codec installation tool (from debian)
  * (transmission-gtk)       # simple GNOME frontend for bittorrent downloads
  * gnome-control-center
  * system-config-printer-gnome
@@ -76,11 +79,10 @@ We've chosen GNOME as our desktop user interface of choice. Rather than using th
  * gnome-terminal
  * baobab
  * gnome-screenshot
- * gnome-search-tool
  * gnome-system-log
  * gnome-font-viewer
  * gucharmap               # SebastienBacher
- * checkbox-gtk
+ * checkbox-qt
  * language-selector-gnome # MichaelVogt
  * (firefox)
  * (firefox-gnome-support)
@@ -88,8 +90,9 @@ We've chosen GNOME as our desktop user interface of choice. Rather than using th
  * nautilus                # SebastienBacher
  * nautilus-sendto
  * (nautilus-share)
- * (rhythmbox) [!armel]
- * (rhythmbox-ubuntuone) [!armel]
+ * (rhythmbox)
+ * (rhythmbox-ubuntuone)
+ * (rhythmbox-plugin-magnatune)
  * (brasero)		   # Oliver Grawert
  * rarian-compat
  * ssh-askpass-gnome
@@ -108,6 +111,7 @@ We've chosen GNOME as our desktop user interface of choice. Rather than using th
  * (pulseaudio-module-gconf)
  * (pulseaudio-module-x11)
  * (pulseaudio-module-bluetooth)
+ * gvfs-bin			# mostly used as xdg-open backend
  * (gvfs-fuse)			# let non-GNOME apps see GVFS via fuse
  * launchpad-integration	# Needed to show the launchpad menu items
  * (gnome-disk-utility)
@@ -135,10 +139,9 @@ The gstreamer0.10 packages we want to install:
  * gstreamer0.10-plugins-base-apps
  * gstreamer0.10-pulseaudio
 
-For Ubuntu we need libsdl1.2debian-pulseaudio for the above gstreamer0.10-plugins-base-apps < libtheora-dev < libsdl1.2-dev < libsdl1.2debian.
+For Ubuntu we need libsdl1.2debian for the above gstreamer0.10-plugins-base-apps < libtheora-dev < libsdl1.2-dev < libsdl1.2debian.
 
- * libsdl1.2debian # tiny and needed for clean CDROM upgrades
- * libsdl1.2debian-pulseaudio
+ * libsdl1.2debian
 
 Accessibility tools:
 
@@ -151,8 +154,8 @@ Accessibility tools:
  * (mousetweaks)
  * at-spi2-core
  * libatk-adaptor
+ * libatk-adaptor-schemas
  * (libgail-common)
- * (libgail-3-common)
  * (qt-at-spi)
 
 = Other Desktop GUI Apps =
@@ -165,13 +168,13 @@ Accessibility tools:
  * (simple-scan)
  * evince
  * (gnome-screensaver) # recommends to allow for xscreensaver to be used
- * (vinagre)
+ * (remmina)
 # * (shotwell) # DOn't think blind people will be organising photos, can be added again later.
  * (jockey-gtk) # enable non-free graphics and other drivers easily
  * (usb-creator-gtk) [i386 amd64]
  * (deja-dup)
  * xdiagnose
- * gwibber
+ * (gwibber)
 
 Desktop Experience:
  * unity
@@ -180,10 +183,16 @@ Desktop Experience:
  * notify-osd           # backend for libnotify
  * (ginn)
  * (sni-qt)
+ * (activity-log-manager-control-center)
+
+libqt4-sql recommends libqt4-sql-mysql | ...; lets pull in the smallest
+alternative to avoid pulling in the large MySQL bits
+ * (libqt4-sql-sqlite)
 
 Online Services:
- * (ubuntuone-control-panel-gtk)
+ * (ubuntuone-installer)
  * (ubuntuone-client-gnome)
+ * (landscape-client-ui-install)
 
 = Documentation =
 
@@ -199,7 +208,7 @@ to compile a driver. -mdz
 
  * (gcc)
  * (make)
- * (linux-headers-generic) [i386]
+ * (linux-headers-generic-pae) [i386]
  * (linux-headers-generic) [amd64]
  * (linux-headers-dove) [armel]
 
@@ -220,3 +229,5 @@ Extra vinux packages.
 
 # End-user applications to be shipped in vinux
  * (speechd-up)
+
+ * (python-aptdaemon.pkcompat) # needed to keep packagekit off the images

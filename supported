@@ -26,6 +26,7 @@ language-selector:
  * /^hyphen-..$/
  * hyphen-en-us
  * /^mythes-/
+ * /^hunspell-[^-]*$/
 
 Transitional packages:
 
@@ -33,6 +34,23 @@ Transitional packages:
  * /^openoffice.org-l10n-/
  * /^openoffice.org-thesaurus-/
  * /^openoffice.org-hyphenation-/
+ * openoffice.org-calc 
+ * openoffice.org-draw 
+ * openoffice.org-emailmerge 
+ * openoffice.org-filter-binfilter 
+ * openoffice.org-gnome 
+ * openoffice.org-gtk 
+ * openoffice.org-impress 
+ * openoffice.org-java-common 
+ * openoffice.org-kde 
+ * openoffice.org-math 
+ * openoffice.org-officebean 
+ * openoffice.org-style-andromeda 
+ * openoffice.org-style-oxygen 
+ * openoffice.org-style-tango 
+ * openoffice.org-writer 
+ * openoffice.org
+ * openoffice.org-common
 
 Needed in main so that LP can import translations for it:
 
@@ -46,11 +64,17 @@ Localization images:
 
  * ubuntuone-client-gnome
  * apparmor-utils    # AppArmor profile development
+ * apparmor-notify   # LP: #893266
+ * apparmor-profiles
+ * libapache2-mod-apparmor
+ * libpam-apparmor
+ * python-libapparmor
 
 = Extra server bits =
 
  * postgresql-plperl-9.1
  * postgresql-plpython-9.1
+ * postgresql-plpython3-9.1
  * postgresql-pltcl-9.1
 
 = Rescued from Extra =
@@ -66,6 +90,7 @@ included due to matching Extra-Include patterns, and has no other effect):
  * Extra-Exclude: gpc*-doc
  * Extra-Exclude: lib*mudflap*
  * Extra-Exclude: gfortran-4.1-doc gfortran-4.2-doc gfortran-4.3-doc lib*gfortran1-dbg
+ * Extra-Exclude: lib*go0-dbg
  * Extra-Exclude: lib*objc1-dbg
  * Extra-Exclude: libavformat-dev libpostproc-dev
  * Extra-Exclude: libgdchart-gd2-xpm-dev
@@ -94,7 +119,8 @@ included due to matching Extra-Include patterns, and has no other effect):
  * Extra-Exclude: virtuoso-vad-doc # depends on binaries that were not MIR-approved
  * Extra-Exclude: libgl1-mesa-dri-experimental-dbg # LP: #638097
  * Extra-Exclude: python-vigra-doc # libvigraimpex is in main, but nothing uses python-vigra
-
+ * Extra-Exclude: asp.net-examples
+ * Extra-Exclude: packagekit-dbg
 
 Transitional packages:
 
@@ -128,8 +154,26 @@ Temporary workarounds:
 Keep until 12.04 LTS:
  * abrowser-branding
  * abrowser
+ * netbook-launcher
  * openoffice.org-base
+ * unity-2d-launcher
+ * unity-2d-places
+ * ttf-opensymbol
+
+Renamed to printer-driver-*
+ * c2esp
+ * foo2zjs
+ * m2300w
+ * min12xxw
+ * ptouch-driver
+ * pxljr
+ * splix
+ * hpijs
 
 = Build infrastructure =
 
  * pkgbinarymangler # needs to be in main to stay in the buildd chroots
+
+= Other =
+
+ * checkbox-gtk # still supported by the checkbox team and default "testing apps" applications (-qt doesn't support it yet)

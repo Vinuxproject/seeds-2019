@@ -17,11 +17,8 @@ Task-Seeds: desktop-common desktop
 
  * libreoffice-officebean
  * libreoffice-nlpsolver
- * libreoffice-help-br
  * libreoffice-l10n-br
  * libreoffice-filter-binfilter
- * libreoffice-style-default
- * libreoffice-style-industrial
  * libreoffice-style-tango
 
 == Games ==
@@ -29,11 +26,14 @@ Task-Seeds: desktop-common desktop
  #* wesnoth        # NOTE: universe package
  #* frozen-bubble  # NOTE: universe package
 
+== Desktop ==
+
+ * vim
+ * byobu
+ * ubuntuone-control-panel-qt
 
 = Documentation =
 
- * ubuntu-faqguide
- * gimp-manual
  * gimp-help-en
  * gimp-help-de
  * gimp-help-sv
@@ -55,8 +55,8 @@ Task-Seeds: desktop-common desktop
 == Fonts ==
 
  * ttf-alee
- * ttf-unfonts-core
- * ttf-unfonts-extra
+ * ttf-nanum-coding
+ * fonts-nanum-extra
  * ttf-arphic-bkai00mp
  * ttf-arphic-bsmi00lp
  * ttf-arphic-gbsn00lp
@@ -77,7 +77,6 @@ Task-Seeds: desktop-common desktop
 
  * gettext-el
  * nabi
- * imhangul
  * culmus
  * %texlive-lang
  * libreoffice-help-en-gb
@@ -90,5 +89,4 @@ Task-Seeds: desktop-common desktop
  #* anjuta # NOTE: universe package
  * devhelp
  * manpages-dev
- * packaging-guide
 

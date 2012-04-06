@@ -12,10 +12,8 @@ Task-Seeds: live-common
  * language-pack-gnome-${Languages}
 
 # subset of English language support which we want by default:
- * firefox-locale-en
- * libreoffice-help-en-us [i386 amd64 powerpc]
+ * libreoffice-help-en-us [i386 amd64]
  * hunspell-en-us
- * openoffice.org-hyphenation
  * wamerican
 
  * Languages: es
