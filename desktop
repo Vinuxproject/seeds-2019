@@ -228,6 +228,5 @@ Extra vinux packages.
  * (vinux-user-configs)
 
 # End-user applications to be shipped in vinux
- * (speechd-up)
 
  * (python-aptdaemon.pkcompat) # needed to keep packagekit off the images
