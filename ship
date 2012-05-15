@@ -54,7 +54,6 @@
 
  * grub # needed for dmraid et al
  * oem-config-gtk
- * oem-config-slideshow-ubuntu
  * uboot-mkimage [armel]
  * partman-iscsi
 
