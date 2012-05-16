@@ -16,9 +16,9 @@ Task-Seeds: live-common
  * hunspell-en-us
  * wamerican
 
- * Languages: es
- * language-pack-${Languages} [!powerpc]
- * language-pack-gnome-${Languages} [!powerpc]
+# * Languages: es
+# * language-pack-${Languages} [!powerpc]
+# * language-pack-gnome-${Languages} [!powerpc]
 
 Enough room on i386, not enough on amd64:
 # * Languages: de
