@@ -177,6 +177,7 @@ Accessibility tools:
 # * (gwibber)
 
 Desktop Experience:
+ * !unity
  * unity-2d
  * unity-greeter        # lightdm greeter for unity
  * notify-osd           # backend for libnotify
