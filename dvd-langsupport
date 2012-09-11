@@ -1,6 +1,5 @@
 = Language support for en =
  * firefox-locale-en
- * gimp-help-en
  * hunspell-en-ca
  * hunspell-en-us
  * hyphen-en-us
@@ -16,18 +15,23 @@
  * mythes-en-au
  * mythes-en-us
  * openoffice.org-hyphenation
+ * thunderbird-locale-en
+ * thunderbird-locale-en-gb
+ * thunderbird-locale-en-us
  * wamerican
  * wbritish
 
 = Language support for es =
  * firefox-locale-es
- * gimp-help-es
  * language-pack-es
  * language-pack-gnome-es
  * libreoffice-help-es
  * libreoffice-l10n-es
  * myspell-es
  * openoffice.org-hyphenation
+ * thunderbird-locale-es
+ * thunderbird-locale-es-ar
+ * thunderbird-locale-es-es
  * wspanish
 
 = Language support for xh =
@@ -46,12 +50,14 @@
  * libreoffice-l10n-pt-br
  * myspell-pt
  * openoffice.org-hyphenation
+ * thunderbird-locale-pt
+ * thunderbird-locale-pt-br
+ * thunderbird-locale-pt-pt
  * wbrazilian
  * wportuguese
 
 = Language support for de =
  * firefox-locale-de
- * gimp-help-de
  * hunspell-de-at
  * hunspell-de-ch
  * hunspell-de-de
@@ -62,13 +68,13 @@
  * libreoffice-l10n-de
  * mythes-de
  * mythes-de-ch
+ * thunderbird-locale-de
  * wngerman
  * wogerman
  * wswiss
 
 = Language support for fr =
  * firefox-locale-fr
- * gimp-help-fr
  * hunspell-fr
  * hyphen-fr
  * language-pack-fr
@@ -76,5 +82,6 @@
  * libreoffice-help-fr
  * libreoffice-l10n-fr
  * mythes-fr
+ * thunderbird-locale-fr
  * wfrench
 
