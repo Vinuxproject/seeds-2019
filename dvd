@@ -15,6 +15,7 @@ Task-Seeds: desktop-common desktop
 
 == LibreOffice ==
 
+ * libreoffice-calc
  * libreoffice-officebean
  * libreoffice-nlpsolver
  * libreoffice-l10n-br
