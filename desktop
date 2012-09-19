@@ -58,8 +58,9 @@ We've chosen GNOME as our desktop user interface of choice. Rather than using th
  * (thunderbird)
  * (thunderbird-gnome-support)
  * file-roller
- * (empathy)
- * (telepathy-idle)        # basic IRC support for empathy
+# * (empathy)
+# * (telepathy-idle)        # basic IRC support for empathy
+ * (pidgin)
  * gcalctool
  * lightdm                 # Proposed GDM replacement for Oneiric, see https://blueprints.launchpad.net/ubuntu/+spec/desktop-o-lightdm
  * gedit
@@ -160,13 +161,13 @@ Accessibility tools:
 
 = Other Desktop GUI Apps =
 
- * (libreoffice-style-human) [i386 amd64 powerpc]
- * (libreoffice-gnome) [i386 amd64 powerpc]
- * (libreoffice-writer) [i386 amd64 powerpc]
+# * (libreoffice-style-human) [i386 amd64 powerpc]
+# * (libreoffice-gnome) [i386 amd64 powerpc]
+# * (libreoffice-writer) [i386 amd64 powerpc]
 # * (libreoffice-calc) [i386 amd64 powerpc]
- * (libreoffice-help-en-us) [i386 amd64 powerpc]
+# * (libreoffice-help-en-us) [i386 amd64 powerpc]
  * (simple-scan)
- * evince
+# * evince
  * (gnome-screensaver) # recommends to allow for xscreensaver to be used
  * (remmina)
 # * (shotwell) # DOn't think blind people will be organising photos, can be added again later.
@@ -214,7 +215,7 @@ to compile a driver. -mdz
 = Other =
 
  * vinux-desktop # metapackage for everything here
- * (example-content) # dholbach: dapper feature goal (wiki.ubuntu.com/ExampleContent)
+# * (example-content) # dholbach: dapper feature goal (wiki.ubuntu.com/ExampleContent)
  * (libwmf0.2-7-gtk)
  * (plymouth-theme-ubuntu-logo)
 
