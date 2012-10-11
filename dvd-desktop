@@ -71,3 +71,5 @@ GStreamer stuff.
  * gstreamer0.10-alsa
  * gstreamer0.10-plugins-base-apps
  * gstreamer0.10-pulseaudio
+ * (totem)
+ * (totem-mozilla)
