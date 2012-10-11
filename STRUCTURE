@@ -1,17 +1,21 @@
 include platform.precise
 desktop: desktop-common
+image-processing: desktop
+audio-processing: desktop
+video-processing: desktop
+education: desktop
 ship: boot installer desktop d-i-requirements
 live: desktop live-common
-dvd-live: dvd live-common
+dvd-live: dvd-desktop live-common
 ship-live: boot live
 development: desktop
 dvd-langsupport: dvd-live
-dvd: boot installer desktop
-dvd-ship-live: dvd-langsupport
+dvd-desktop: boot installer desktop
+dvd-ship-live: dvd-langsupport image-processing audio-processing video-processing education
 usb: boot installer desktop
 usb-live: usb live-common
 usb-langsupport: usb-live
 usb-ship-live: usb-langsupport
-supported-desktop-extra: dvd dvd-live usb-live
+supported-desktop-extra: dvd-desktop dvd-live usb-live
 # make sure supported remains the last entry
 supported: dvd-live ship-live dvd usb-live language-packs supported-desktop-extra

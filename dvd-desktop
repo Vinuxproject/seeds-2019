@@ -2,43 +2,25 @@ Task-Per-Derivative: 1
 Task-Section: user
 Task-Description: Vinux desktop DVD
 Task-Extended-Description: This task provides the extra packages installed on the Vinux desktop DVD image, above and beyond those included on the Vinux CD image. It is neither useful nor recommended to install this task in other environments.
-Task-Key: inkscape
+Task-Key: libreoffice-writer
 Task-Seeds: desktop-common desktop
 
 = Applications =
 
 == Creative ==
 
- * inkscape
- * gimp
- * pitivi
+# * inkscape
+# * gimp
+# * pitivi
 
 == LibreOffice ==
 
- * libreoffice-calc
- * libreoffice-officebean
- * libreoffice-nlpsolver
- * libreoffice-l10n-br
- * libreoffice-filter-binfilter
- * libreoffice-style-tango
-
-== Games ==
-
- #* wesnoth        # NOTE: universe package
- #* frozen-bubble  # NOTE: universe package
-
-== Desktop ==
-
- * vim
- * byobu
+ * (libreoffice-style-human) [i386 amd64 powerpc]
+ * (libreoffice-gnome) [i386 amd64 powerpc]
+ * (libreoffice-writer) [i386 amd64 powerpc]
+ * (libreoffice-calc) [i386 amd64 powerpc]
+ * (libreoffice-help-en-us) [i386 amd64 powerpc]
  * ubuntuone-control-panel-qt
-
-= Documentation =
-
- * gimp-help-en
- * gimp-help-de
- * gimp-help-sv
- * gimp-help-fr
 
 = Localisation =
 
@@ -76,18 +58,16 @@ Task-Seeds: desktop-common desktop
 
 == Application Support ==
 
- * gettext-el
- * nabi
  * culmus
- * %texlive-lang
+# * %texlive-lang
  * libreoffice-help-en-gb
  * libreoffice-l10n-en-gb
  * libreoffice-l10n-in	# dependency package for Indian locales
  * libreoffice-l10n-za	# dependency package for South African locales
 
-= Development =
+GStreamer stuff.
 
- #* anjuta # NOTE: universe package
- * devhelp
- * manpages-dev
-
+ * bluez-gstreamer
+ * gstreamer0.10-alsa
+ * gstreamer0.10-plugins-base-apps
+ * gstreamer0.10-pulseaudio

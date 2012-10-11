@@ -14,7 +14,7 @@ Task-Seeds: desktop-common
 Bluetooth:
 
  * (gnome-bluetooth) # desktop bluetooth support
- * (bluez-gstreamer)
+# * (bluez-gstreamer)
 
 = Network Services =
 
@@ -29,7 +29,6 @@ Basic network services and Windows integration.
 
 = GUI infrastructure =
 
- * xterm                         # Provide a backup terminal and complete X env.
  * libnotify-bin		 # various scripts need notify-send (such as .bashrc's "alert")
 
 Extra fonts (should be common, but not so for space reasons):
@@ -61,9 +60,12 @@ We've chosen GNOME as our desktop user interface of choice. Rather than using th
 # * (empathy)
 # * (telepathy-idle)        # basic IRC support for empathy
  * (pidgin)
+ * (pidgin-microblog)
+ * (pidgin-facebookchat)
  * gcalctool
  * lightdm                 # Proposed GDM replacement for Oneiric, see https://blueprints.launchpad.net/ubuntu/+spec/desktop-o-lightdm
  * gedit
+ * (gedit-plugins)
  * software-center
  * (app-install-data-partner)
  * (transmission-gtk)       # simple GNOME frontend for bittorrent downloads
@@ -91,15 +93,14 @@ We've chosen GNOME as our desktop user interface of choice. Rather than using th
  * nautilus                # SebastienBacher
  * nautilus-sendto
  * (nautilus-share)
- * (rhythmbox)
- * (rhythmbox-ubuntuone)
- * (rhythmbox-plugin-magnatune)
+ * (audacious)
+ * (gtkpod)
  * (brasero)		   # Oliver Grawert
  * rarian-compat
  * ssh-askpass-gnome
  * software-properties-gtk # default GUI sources.list editor
- * (totem)
- * (totem-mozilla)
+# * (totem)
+# * (totem-mozilla)
  * update-manager
  * update-notifier
  * (vino) # vnc server
@@ -136,13 +137,13 @@ Themes: we will ship only the very best looking themes. We won't ship everything
 
 The gstreamer0.10 packages we want to install:
 
- * gstreamer0.10-alsa
- * gstreamer0.10-plugins-base-apps
- * gstreamer0.10-pulseaudio
+# * gstreamer0.10-alsa
+# * gstreamer0.10-plugins-base-apps
+# * gstreamer0.10-pulseaudio
 
 For Ubuntu we need libsdl1.2debian for the above gstreamer0.10-plugins-base-apps < libtheora-dev < libsdl1.2-dev < libsdl1.2debian.
 
- * libsdl1.2debian
+# * libsdl1.2debian
 
 Accessibility tools:
 
@@ -226,6 +227,23 @@ Extra vinux packages.
  * (vinux-desktop-settings)
  * (vinux-wallpapers)
  * (vinux-user-configs)
+
+Extras that Vinux users want.
+ * (monitor-toggle)
+ * (indicator-weather)
+ * (nautilus-gksu)
+ * (orca-teacher)
+ * (mangler)
+ * (hardinfo)
+ * !lm-sensors*
+ * (nautilus-open-terminal)
+ * (geditpdf)
+ * (nautilus-wallpaper)
+ * (gparted)
+ * (irssi)
+ * (aptoncd)
+ * (clamtk)
+ * (nautilus-clamscan)
 
 # End-user applications to be shipped in vinux
 
