@@ -35,3 +35,7 @@ These packages make up the Ubiquity live installer.
 
  * gparted
  * cifs-utils # Needed by casper for CIFS root=
+
+Some stuff needed for the live environment on Vinux.
+
+ * vinux-live-settings
