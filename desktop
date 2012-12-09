@@ -96,7 +96,6 @@ We've chosen GNOME as our desktop user interface of choice. Rather than using th
  * (audacious)
  * (gtkpod)
  * (brasero)		   # Oliver Grawert
- * rarian-compat
  * ssh-askpass-gnome
  * software-properties-gtk # default GUI sources.list editor
 # * (totem)
@@ -209,8 +208,7 @@ to compile a driver. -mdz
 
  * (gcc)
  * (make)
- * (linux-headers-generic-pae) [i386]
- * (linux-headers-generic) [amd64]
+ * (linux-headers-generic-lts-quantal) [amd64 i386]
  * (linux-headers-dove) [armel]
 
 = Other =

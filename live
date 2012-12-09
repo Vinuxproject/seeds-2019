@@ -20,11 +20,6 @@ Task-Seeds: live-common
 # * language-pack-${Languages} [!powerpc]
 # * language-pack-gnome-${Languages} [!powerpc]
 
-Enough room on i386, not enough on amd64:
-# * Languages: de
-# * language-pack-${Languages} [i386]
-# * language-pack-gnome-${Languages} [i386]
-
  * gparted
  * cifs-utils # Needed by casper for CIFS root=
 
@@ -34,7 +29,14 @@ These packages make up the Ubiquity live installer.
 
  * ubiquity-frontend-gtk
  * ubiquity-ubuntu-artwork
+<<<<<<< TREE
 
 Some stuff needed for the live environment on Vinux.
 
  * vinux-live-settings
+
+== Kernel ==
+
+ * Signed-Kernel-Stem: linux-signed linux-signed-image
+
+ * ${Signed-Kernel-Stem}-generic-lts-quantal [amd64]
