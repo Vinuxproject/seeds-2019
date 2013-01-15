@@ -207,8 +207,6 @@ to compile a driver. -mdz
 
  * (gcc)
  * (make)
- * (linux-headers-generic-lts-quantal) [amd64 i386]
- * (linux-headers-dove) [armel]
 
 = Other =
 
