@@ -16,9 +16,13 @@ Task-Seeds: live-common
  * hunspell-en-us
  * wamerican
 
- * Languages: es pt zh-hans
+ * Languages: es zh-hans
  * language-pack-${Languages} [!powerpc]
  * language-pack-gnome-${Languages} [!powerpc]
+
+ * Languages: pt
+ * language-pack-${Languages} [!amd64 !powerpc]
+ * language-pack-gnome-${Languages} [!amd64 !powerpc]
 
  * gparted
  * cifs-utils # Needed by casper for CIFS root=
