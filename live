@@ -16,11 +16,11 @@ Task-Seeds: live-common
  * hunspell-en-us
  * wamerican
 
- * Languages: es zh-hans
+ * Languages: zh-hans
  * language-pack-${Languages} [!powerpc]
  * language-pack-gnome-${Languages} [!powerpc]
 
- * Languages: pt
+ * Languages: es
  * language-pack-${Languages} [!amd64 !powerpc]
  * language-pack-gnome-${Languages} [!amd64 !powerpc]
 
