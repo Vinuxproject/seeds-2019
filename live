@@ -13,8 +13,8 @@ Task-Seeds: live-common
 
 # subset of English language support which we want by default:
 # * libreoffice-help-en-us [i386 amd64]
- * hunspell-en-us
- * wamerican
+# * hunspell-en-us
+# * wamerican
 
 # * Languages: es
 # * language-pack-${Languages} [!powerpc]
