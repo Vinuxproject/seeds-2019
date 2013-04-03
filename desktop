@@ -55,6 +55,7 @@ We've chosen GNOME as our desktop user interface of choice. Rather than using th
  * (whoopsie)              # http://wiki.ubuntu.com/ErrorTracker - EvanDandrea
  * eog
  * (thunderbird)
+ * !thunderbird-globalmenu
  * (thunderbird-gnome-support)
  * file-roller
 # * (empathy)
@@ -89,6 +90,7 @@ We've chosen GNOME as our desktop user interface of choice. Rather than using th
  * language-selector-gnome # MichaelVogt
  * (firefox)
  * (firefox-gnome-support)
+ * !firefox-globalmenu
  * (xul-ext-ubufox)        # ubuntu firefox tweaks - AlexanderSack
  * nautilus                # SebastienBacher
  * nautilus-sendto
