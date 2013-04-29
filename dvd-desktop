@@ -21,6 +21,10 @@ Task-Key: libreoffice-writer
  * (libreoffice-help-en-us) [i386 amd64 powerpc]
  * ubuntuone-control-panel-qt
 
+# Further document related tools
+
+ * (geditpdf)
+
 = Localisation =
 
 == Input methods ==
