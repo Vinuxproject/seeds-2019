@@ -66,9 +66,9 @@ Task-Key: libreoffice-writer
 
 GStreamer stuff.
 
- * bluez-gstreamer
- * gstreamer0.10-alsa
- * gstreamer0.10-plugins-base-apps
- * gstreamer0.10-pulseaudio
- * (totem)
- * (totem-mozilla)
+# * bluez-gstreamer
+# * gstreamer0.10-alsa
+# * gstreamer0.10-plugins-base-apps
+# * gstreamer0.10-pulseaudio
+# * (totem)
+# * (totem-mozilla)
