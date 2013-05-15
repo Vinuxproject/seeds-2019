@@ -170,7 +170,7 @@ Accessibility tools:
  * (simple-scan)
 # * evince
  * (gnome-screensaver) # recommends to allow for xscreensaver to be used
- * (remmina)
+# * (remmina)
 # * (shotwell) # DOn't think blind people will be organising photos, can be added again later.
  * (jockey-gtk) # enable non-free graphics and other drivers easily
  * (usb-creator-gtk) [i386 amd64]
@@ -193,7 +193,7 @@ alternative to avoid pulling in the large MySQL bits
 Online Services:
 # * (ubuntuone-installer)
 # * (ubuntuone-client-gnome)
- * (landscape-client-ui-install)
+# * (landscape-client-ui-install)
 
 = Documentation =
 
