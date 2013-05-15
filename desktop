@@ -191,8 +191,8 @@ alternative to avoid pulling in the large MySQL bits
  * (libqt4-sql-sqlite)
 
 Online Services:
- * (ubuntuone-installer)
- * (ubuntuone-client-gnome)
+# * (ubuntuone-installer)
+# * (ubuntuone-client-gnome)
  * (landscape-client-ui-install)
 
 = Documentation =

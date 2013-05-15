@@ -30,7 +30,7 @@ Task-Seeds: desktop-common desktop
 
  * vim
  * byobu
- * ubuntuone-control-panel-qt
+# * ubuntuone-control-panel-qt
 
 = Documentation =
 

@@ -19,7 +19,7 @@ Task-Key: libreoffice-writer
  * (libreoffice-writer) [i386 amd64 powerpc]
  * (libreoffice-calc) [i386 amd64 powerpc]
  * (libreoffice-help-en-us) [i386 amd64 powerpc]
- * ubuntuone-control-panel-qt
+# * ubuntuone-control-panel-qt
 
 = Localisation =
 
