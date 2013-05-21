@@ -72,3 +72,6 @@ GStreamer stuff.
 # * gstreamer0.10-pulseaudio
 # * (totem)
 # * (totem-mozilla)
+
+Speech-dispatcher
+ * (speech-dispatcher-pico)
