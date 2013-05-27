@@ -117,7 +117,7 @@ We've chosen GNOME as our desktop user interface of choice. Rather than using th
  * (gvfs-fuse)			# let non-GNOME apps see GVFS via fuse
  * launchpad-integration	# Needed to show the launchpad menu items
  * (gnome-disk-utility)
- * (overlay-scrollbar)
+# * (overlay-scrollbar)
 
 Games: DOn't want these in Vinux, no use to those who can't see them.
 # * (aisleriot)
@@ -219,7 +219,7 @@ to compile a driver. -mdz
 Extra vinux packages.
  * (vinux-default-settings)
  * (vinux-keyboard-shortcuts)
- * (vinux-compiz-settings)
+# * (vinux-compiz-settings)
  * (vinux-desktop-settings)
  * (vinux-wallpapers)
  * (vinux-user-configs)
