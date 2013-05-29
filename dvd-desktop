@@ -19,7 +19,7 @@ Task-Key: libreoffice-writer
  * (libreoffice-writer) [i386 amd64 powerpc]
  * (libreoffice-calc) [i386 amd64 powerpc]
  * (libreoffice-help-en-us) [i386 amd64 powerpc]
-# * ubuntuone-control-panel-qt
+ * ubuntuone-control-panel-qt
 
 = Localisation =
 
@@ -66,12 +66,17 @@ Task-Key: libreoffice-writer
 
 GStreamer stuff.
 
-# * bluez-gstreamer
-# * gstreamer0.10-alsa
-# * gstreamer0.10-plugins-base-apps
-# * gstreamer0.10-pulseaudio
-# * (totem)
-# * (totem-mozilla)
+ * bluez-gstreamer
+ * gstreamer0.10-alsa
+ * gstreamer0.10-plugins-base-apps
+ * gstreamer0.10-pulseaudio
+ * (totem)
+ * (totem-mozilla)
 
-Speech-dispatcher
+CD overflow
  * (speech-dispatcher-pico)
+ * (console-braille)
+ * (nautilus-share)
+ * (aptoncd)
+ * (clamtk)
+ * (nautilus-clamscan)
