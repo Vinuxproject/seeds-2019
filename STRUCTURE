@@ -4,6 +4,7 @@ image-processing: desktop
 audio-processing: desktop
 video-processing: desktop
 education: desktop
+cli: standard
 ship: boot installer desktop d-i-requirements
 live: desktop live-common
 dvd-desktop: desktop
