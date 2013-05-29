@@ -27,10 +27,6 @@ packages.
  * lupin-support [amd64 i386] # installer-for-windows
  * uboot-mkimage [armel] # needed on dove for uboot
 
-== Accessibility packages we want to ship ===
-
- * speakup
-
 == Blacklist ==
 
 libavcodec cannot be shipped on CDs (c.f. Ubuntu technical board resolution 2007-01-02).
