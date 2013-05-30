@@ -94,7 +94,7 @@ We've chosen GNOME as our desktop user interface of choice. Rather than using th
  * (xul-ext-ubufox)        # ubuntu firefox tweaks - AlexanderSack
  * nautilus                # SebastienBacher
  * nautilus-sendto
- * (nautilus-share)
+# * (nautilus-share)
  * (audacious)
  * (brasero)		   # Oliver Grawert
  * ssh-askpass-gnome
