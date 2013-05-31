@@ -36,6 +36,8 @@ Task-Key: libreoffice-writer
 
 == Fonts ==
 
+ * ttf-wqy-microhei)
+ * (fonts-nanum)
  * ttf-alee
  * ttf-nanum-coding
  * fonts-nanum-extra
