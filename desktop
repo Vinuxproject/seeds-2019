@@ -33,8 +33,8 @@ Basic network services and Windows integration.
 
 Extra fonts (should be common, but not so for space reasons):
 
- * (ttf-wqy-microhei)
- * (fonts-nanum)
+# * (ttf-wqy-microhei)
+# * (fonts-nanum)
  * (fonts-liberation)
  * cmap-adobe-japan2             # gs-cjk-resource prefers cmap-adobe-japan1 which is much bigger; language-selector will pull in the right one for a language
 
