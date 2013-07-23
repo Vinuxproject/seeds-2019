@@ -1,0 +1,33 @@
+Task-Per-Derivative: 1
+Task-Section: user
+Task-Description: Vinux command-line live CD
+Task-Extended-Description: This task provides the extra packages installed on the Vinux live CD. It is neither useful nor recommended to install this task in other environments.
+Task-Relevance: 2
+Task-Key: ubiquity-frontend-debconf
+Task-Test-new-install: skip show
+Task-Seeds: live-common
+
+ * Languages: en
+ * language-pack-${Languages}
+
+# * Languages: es
+# * language-pack-${Languages} [!powerpc]
+
+ * cifs-utils # Needed by casper for CIFS root=
+
+== Ubiquity components ==
+
+These packages make up the Ubiquity live installer.
+
+ * ubiquity-frontend-debconf
+
+Some stuff needed for the live environment on Vinux.
+# NOTE: May need something like this for CLI later.
+
+# * vinux-live-settings
+
+== Kernel ==
+
+ * Signed-Kernel-Stem: linux-signed linux-signed-image
+
+ * ${Signed-Kernel-Stem}-generic-lts-quantal [amd64]
