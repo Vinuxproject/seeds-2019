@@ -6,7 +6,7 @@ video-processing: desktop
 education: desktop
 cli: standard
 cli-live: cli live-common
-cli-ship-live: cli-langsupport
+cli-ship-live: boot cli-live
 ship: boot installer desktop d-i-requirements
 live: desktop live-common
 dvd-desktop: desktop
