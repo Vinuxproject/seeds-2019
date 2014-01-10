@@ -9,8 +9,8 @@ restricted modules.
 
 == i386 ==
 
- * ${Kernel-Stem}-generic-lts-raring [i386]
- * linux-headers-generic-lts-raring [i386]
+ * ${Kernel-Stem}-generic-lts-saucy [i386]
+ * linux-headers-generic-lts-saucy [i386]
 
 == powerpc ==
 
@@ -19,10 +19,10 @@ restricted modules.
 
 == amd64 ==
 
- * ${Kernel-Stem}-generic-lts-raring [amd64]
- * linux-headers-generic-lts-raring [amd64]
+ * ${Kernel-Stem}-generic-lts-saucy [amd64]
+ * linux-headers-generic-lts-saucy [amd64]
 
- * ${Signed-Kernel-Stem}-generic-lts-raring [amd64]
+ * ${Signed-Kernel-Stem}-generic-lts-saucy [amd64]
 
 = From Ship =
 
