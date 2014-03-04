@@ -1,6 +1,6 @@
 == Kernel ==
 
- * linux-generic-lts-saucy [amd64 i386]
+ * linux-generic [amd64 i386 ppc64el arm64]
 
 == Server ==
 
@@ -30,6 +30,7 @@
  * libatm1	# suggested by ppp for PPP-over-ATM
  * setserial	# needed by folks with nonstandard serial ports
  * b43-fwcutter
+ * sosreport
 
 == Common language packs ==
 
@@ -45,6 +46,7 @@
 
 == Installer ==
 
+ * bootstrap-base
  * grub # needed for dmraid et al
  * oem-config-gtk
  * uboot-mkimage [armel]

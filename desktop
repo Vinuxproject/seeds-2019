@@ -9,8 +9,6 @@ Task-Seeds: desktop-common
 
 == Architecture-independent ==
 
- * libgd2-xpm # force the xpm-enabled version for edubuntu compatibility
-
 Bluetooth:
 
  * (gnome-bluetooth) # desktop bluetooth support
@@ -29,18 +27,18 @@ Basic network services and Windows integration.
 
 = GUI infrastructure =
 
+ * (xterm)                        # Provide a backup terminal and complete X env.
  * libnotify-bin		 # various scripts need notify-send (such as .bashrc's "alert")
 
 Extra fonts (should be common, but not so for space reasons):
 
-# * (ttf-wqy-microhei)
-# * (fonts-nanum)
+ * (fonts-droid)
+ * (fonts-nanum)
  * (fonts-liberation)
- * cmap-adobe-japan2             # gs-cjk-resource prefers cmap-adobe-japan1 which is much bigger; language-selector will pull in the right one for a language
 
 Input methods:
 
- * (im-switch)
+ * (im-config)
  * (ibus)
  * (ibus-gtk3)
  * (ibus-table)
@@ -54,53 +52,51 @@ We've chosen GNOME as our desktop user interface of choice. Rather than using th
  * (apport-gtk)
  * (whoopsie)              # http://wiki.ubuntu.com/ErrorTracker - EvanDandrea
  * eog
- * (thunderbird)
- * !thunderbird-globalmenu*
- * (thunderbird-gnome-support)
+ * (thunderbird) [!armhf]
+ * (thunderbird-gnome-support) [!armhf]
  * file-roller
 # * (empathy)
 # * (telepathy-idle)        # basic IRC support for empathy
  * (pidgin)
  * (pidgin-microblog)
  * (pidgin-facebookchat)
- * gcalctool
+ * gnome-calculator
  * lightdm                 # Proposed GDM replacement for Oneiric, see https://blueprints.launchpad.net/ubuntu/+spec/desktop-o-lightdm
  * gedit
  * (gedit-plugins)
  * software-center
  * (app-install-data-partner)
  * (transmission-gtk)       # simple GNOME frontend for bittorrent downloads
- * gnome-control-center
+ * unity-settings-daemon
+ * unity-control-center
  * system-config-printer-gnome
- * gnome-media
  * gnome-menus
- * gnome-nettool            # part of 2.8
- * gnome-session
+ * ubuntu-session
  * seahorse
  * (libpam-gnome-keyring)
  * gnome-system-monitor     # SebastienBacher
  * gnome-power-manager		# OliverGrawert finally ready for shipment
- * gnome-terminal
+ * (gnome-terminal)
  * baobab
  * gnome-screenshot
  * gnome-system-log
  * gnome-font-viewer
  * gucharmap               # SebastienBacher
- * checkbox-qt
+ * checkbox-gui
  * language-selector-gnome # MichaelVogt
  * (firefox)
- * (firefox-gnome-support)
- * !firefox-globalmenu*
  * (xul-ext-ubufox)        # ubuntu firefox tweaks - AlexanderSack
  * nautilus                # SebastienBacher
  * nautilus-sendto
 # * (nautilus-share)
  * (audacious)
  * (brasero)		   # Oliver Grawert
+ * (cheese)
  * ssh-askpass-gnome
- * software-properties-gtk # default GUI sources.list editor
-# * (totem)
-# * (totem-mozilla)
+ * software-properties-gtk # default GUI sources.list editor / extra drivers
+ * (totem)
+ * (totem-mozilla)
+ * ubuntu-release-upgrader-gtk
  * update-manager
  * update-notifier
  * (vino) # vnc server
@@ -110,12 +106,10 @@ We've chosen GNOME as our desktop user interface of choice. Rather than using th
  * xdg-user-dirs
  * xdg-user-dirs-gtk
  * pulseaudio
- * (pulseaudio-module-gconf)
  * (pulseaudio-module-x11)
  * (pulseaudio-module-bluetooth)
  * gvfs-bin			# mostly used as xdg-open backend
  * (gvfs-fuse)			# let non-GNOME apps see GVFS via fuse
- * launchpad-integration	# Needed to show the launchpad menu items
  * (gnome-disk-utility)
 # * (overlay-scrollbar)
 
@@ -135,15 +129,20 @@ Themes: we will ship only the very best looking themes. We won't ship everything
  * gnome-session-canberra	# Needed to make login/logout sounds audible.
  * dmz-cursor-theme
 
-The gstreamer0.10 packages we want to install:
+Settings: we have some settings overrides by default in an unique package.
+ * ubuntu-settings
+
+The gstreamer0.10 packages we want to install until no gstreamer1.0 packages are on default media:
 
 # * gstreamer0.10-alsa
 # * gstreamer0.10-plugins-base-apps
 # * gstreamer0.10-pulseaudio
 
-For Ubuntu we need libsdl1.2debian for the above gstreamer0.10-plugins-base-apps < libtheora-dev < libsdl1.2-dev < libsdl1.2debian.
+The gstreamer1.0 packages we want to install:
 
-# * libsdl1.2debian
+ * gstreamer1.0-alsa
+ * gstreamer1.0-plugins-base-apps
+ * gstreamer1.0-pulseaudio
 
 Accessibility tools:
 
@@ -161,37 +160,41 @@ Accessibility tools:
 
 = Other Desktop GUI Apps =
 
-# * (libreoffice-style-human) [i386 amd64 powerpc]
-# * (libreoffice-gnome) [i386 amd64 powerpc]
-# * (libreoffice-writer) [i386 amd64 powerpc]
-# * (libreoffice-calc) [i386 amd64 powerpc]
-# * (libreoffice-help-en-us) [i386 amd64 powerpc]
+ * (libreoffice-style-human) [!powerpc !armhf]
+ * (libreoffice-gnome) [!powerpc !armhf]
+ * (libreoffice-writer) [!powerpc !armhf]
+ * (libreoffice-calc) [!powerpc !armhf]
+ * (libreoffice-impress) [!powerpc !armhf]
+ * (libreoffice-math) [!powerpc !armhf]
+ * (libreoffice-ogltrans) [!powerpc !armhf]
+ * (libreoffice-pdfimport) [!powerpc !armhf !armel]
+ * (libreoffice-presentation-minimizer) [!powerpc !armhf !armel]
  * (simple-scan)
 # * evince
  * (gnome-screensaver) # recommends to allow for xscreensaver to be used
 # * (remmina)
 # * (shotwell) # DOn't think blind people will be organising photos, can be added again later.
- * (jockey-gtk) # enable non-free graphics and other drivers easily
  * (usb-creator-gtk) [i386 amd64]
  * (deja-dup)
+ * (deja-dup-backend-ubuntuone)
  * xdiagnose
-# * (gwibber)
 
 Desktop Experience:
- * unity-2d
+ * unity
  * unity-greeter        # lightdm greeter for unity
  * notify-osd           # backend for libnotify
- * (ginn)
  * (sni-qt)
  * (activity-log-manager-control-center)
+ * (xul-ext-unity)
+ * (unity-webapps-common)
+ * (xul-ext-webaccounts)
 
 libqt4-sql recommends libqt4-sql-mysql | ...; lets pull in the smallest
 alternative to avoid pulling in the large MySQL bits
  * (libqt4-sql-sqlite)
 
 Online Services:
-# * (ubuntuone-installer)
-# * (ubuntuone-client-gnome)
+# * (ubuntuone-control-panel-qt)
 # * (landscape-client-ui-install)
 
 = Documentation =
@@ -219,7 +222,6 @@ to compile a driver. -mdz
 Extra vinux packages.
  * (vinux-default-settings)
  * (vinux-keyboard-shortcuts)
-# * (vinux-compiz-settings)
  * (vinux-desktop-settings)
  * (vinux-wallpapers)
  * (vinux-user-configs)
@@ -227,7 +229,6 @@ Extra vinux packages.
 Extras that Vinux users want.
  * (monitor-toggle)
  * (indicator-weather)
-# * (nautilus-gksu)
  * (orca-teacher)
  * (mangler)
  * (hardinfo)
@@ -244,5 +245,5 @@ Extras that Vinux users want.
 
 # End-user applications to be shipped in vinux
 
- * (python-aptdaemon.pkcompat) # needed to keep packagekit off the images
+ * (python3-aptdaemon.pkcompat) # needed to keep packagekit off the images
  * xserver-xorg-lts-saucy # lts backport enablement

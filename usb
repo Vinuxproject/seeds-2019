@@ -18,7 +18,6 @@ Task-Seeds: desktop-common desktop
  * libreoffice-officebean
  * libreoffice-nlpsolver
  * libreoffice-l10n-br
- * libreoffice-filter-binfilter
  * libreoffice-style-tango
 
 == Games ==
@@ -30,7 +29,6 @@ Task-Seeds: desktop-common desktop
 
  * vim
  * byobu
-# * ubuntuone-control-panel-qt
 
 = Documentation =
 
@@ -57,10 +55,10 @@ Task-Seeds: desktop-common desktop
  * ttf-alee
  * ttf-nanum-coding
  * fonts-nanum-extra
- * ttf-arphic-bkai00mp
- * ttf-arphic-bsmi00lp
- * ttf-arphic-gbsn00lp
- * ttf-arphic-gkai00mp
+ * fonts-arphic-bkai00mp
+ * fonts-arphic-bsmi00lp
+ * fonts-arphic-gbsn00lp
+ * fonts-arphic-gkai00mp
  * ttf-malayalam-fonts
  * ttf-devanagari-fonts
  * ttf-tamil-fonts
@@ -78,7 +76,6 @@ Task-Seeds: desktop-common desktop
  * gettext-el
  * nabi
  * culmus
- * %texlive-lang
  * libreoffice-help-en-gb
  * libreoffice-l10n-en-gb
  * libreoffice-l10n-in	# dependency package for Indian locales

@@ -1,4 +1,4 @@
-include platform.precise
+include platform.trusty
 desktop: desktop-common
 image-processing: desktop
 audio-processing: desktop
