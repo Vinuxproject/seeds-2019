@@ -38,4 +38,4 @@ Some stuff needed for the live environment on Vinux.
 
  * Signed-Kernel-Stem: linux-signed linux-signed-image
 
- * ${Signed-Kernel-Stem}-generic-lts-raring [amd64]
+ * ${Signed-Kernel-Stem}-generic-lts-saucy [amd64]

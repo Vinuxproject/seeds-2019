@@ -245,4 +245,4 @@ Extras that Vinux users want.
 # End-user applications to be shipped in vinux
 
  * (python-aptdaemon.pkcompat) # needed to keep packagekit off the images
- * xserver-xorg-lts-raring # lts backport enablement
+ * xserver-xorg-lts-saucy # lts backport enablement
