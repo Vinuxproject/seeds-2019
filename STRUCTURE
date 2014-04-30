@@ -9,16 +9,11 @@ cli-live: cli live-common
 cli-ship-live: boot cli-live
 ship: boot installer desktop d-i-requirements
 live: desktop live-common
-dvd-desktop: desktop
-dvd-live: dvd-desktop live-common
-ship-live: boot live
 development: desktop
-dvd-langsupport: dvd-live
-dvd-ship-live: dvd-langsupport
 usb: boot installer desktop
 usb-live: usb live-common
 usb-langsupport: usb-live
 usb-ship-live: usb-langsupport
-supported-desktop-extra: dvd-desktop dvd-live usb-live
+supported-desktop-extra: usb-live
 # make sure supported remains the last entry
 supported: dvd-live ship-live dvd-desktop usb-live language-packs supported-desktop-extra

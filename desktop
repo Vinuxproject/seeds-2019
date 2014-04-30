@@ -169,14 +169,15 @@ Accessibility tools:
  * (libreoffice-ogltrans) [!powerpc !armhf]
  * (libreoffice-pdfimport) [!powerpc !armhf !armel]
  * (libreoffice-presentation-minimizer) [!powerpc !armhf !armel]
+ * (libreoffice-help-en-gb)
+ * (libreoffice-l10n-en-gb)
  * (simple-scan)
-# * evince
+ * evince
  * (gnome-screensaver) # recommends to allow for xscreensaver to be used
 # * (remmina)
 # * (shotwell) # DOn't think blind people will be organising photos, can be added again later.
  * (usb-creator-gtk) [i386 amd64]
  * (deja-dup)
- * (deja-dup-backend-ubuntuone)
  * xdiagnose
 
 Desktop Experience:
@@ -194,7 +195,6 @@ alternative to avoid pulling in the large MySQL bits
  * (libqt4-sql-sqlite)
 
 Online Services:
-# * (ubuntuone-control-panel-qt)
 # * (landscape-client-ui-install)
 
 = Documentation =
@@ -242,6 +242,12 @@ Extras that Vinux users want.
  * (speakup)
  * (speechd-up)
  * (speakup-tools)
+ * (speech-dispatcher-pico)
+ * (console-braille)
+ * (nautilus-share)
+ * (aptoncd)
+ * (clamtk)
+ * (nautilus-clamscan)
 
 # End-user applications to be shipped in vinux
 
