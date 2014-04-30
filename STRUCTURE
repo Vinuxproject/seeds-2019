@@ -16,4 +16,4 @@ usb-langsupport: usb-live
 usb-ship-live: usb-langsupport
 supported-desktop-extra: usb-live
 # make sure supported remains the last entry
-supported: dvd-live ship-live dvd-desktop usb-live language-packs supported-desktop-extra
+supported: ship-live usb-live language-packs supported-desktop-extra
