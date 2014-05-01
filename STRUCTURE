@@ -9,6 +9,7 @@ cli-live: cli live-common
 cli-ship-live: boot cli-live
 ship: boot installer desktop d-i-requirements
 live: desktop live-common
+ship-live: boot live
 development: desktop
 usb: boot installer desktop
 usb-live: usb live-common
