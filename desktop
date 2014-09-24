@@ -184,6 +184,7 @@ Desktop Experience:
  * unity
  * unity-greeter        # lightdm greeter for unity
  * notify-osd           # backend for libnotify
+ * (gnome-shell)        # alternative accessible desktop environment.
  * (sni-qt)
  * (activity-log-manager-control-center)
  * (xul-ext-unity)
