@@ -157,6 +157,7 @@ Accessibility tools:
  * libatk-adaptor
  * (libgail-common)
  * (qt-at-spi)
+ * (qt-at-spi:i386) [amd64]
 
 = Other Desktop GUI Apps =
 
