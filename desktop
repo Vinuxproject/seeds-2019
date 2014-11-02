@@ -200,11 +200,9 @@ Accessibility tools:
  * (gksu)
  * (gnome-keyring)
  * (gnome-system-tools)
- * (gucharmap)
  * (indicator-application-gtk2)
  * (indicator-sound-gtk2)
  * (libp11-kit-gnome-keyring)
- * (libpam-gnome-keyring)
  * (marco)
  * (mate-applets)
  * (mate-icon-theme)
@@ -223,8 +221,6 @@ Accessibility tools:
  * (matemenu)
  * (mozo)
  * (pluma)
- * (yelp)
- * (zenity)
 
 Desktop Experience:
  * unity
