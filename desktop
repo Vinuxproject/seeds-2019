@@ -187,7 +187,6 @@ Accessibility tools:
  * (mate-gnome-main-menu-applet)
  * (mate-media-pulse)
  * (mate-settings-daemon-pulse)
- * (atril)
  * (blueman)
  * (caja)
  * (caja-gksu)
@@ -220,7 +219,6 @@ Accessibility tools:
  * (mate-utils)
  * (matemenu)
  * (mozo)
- * (pluma)
 
 Desktop Experience:
  * unity
