@@ -266,6 +266,7 @@ Extra vinux packages.
  * (vinux-desktop-settings)
  * (vinux-wallpapers)
  * (vinux-user-configs)
+ * (vinux-mate-settings)
 
 Extras that Vinux users want.
  * (monitor-toggle)
