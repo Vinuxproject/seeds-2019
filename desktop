@@ -289,7 +289,8 @@ Extras that Vinux users want.
  * (aptoncd)
  * (clamtk)
  * (nautilus-clamscan)
-
+ * (openssh-server)
+ * (cfh)
 # End-user applications to be shipped in vinux
 
  * (python3-aptdaemon.pkcompat) # needed to keep packagekit off the images
