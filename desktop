@@ -12,7 +12,6 @@ Task-Seeds: desktop-common
 Bluetooth:
 
  * (gnome-bluetooth) # desktop bluetooth support
-# * (bluez-gstreamer)
 
 = Network Services =
 
@@ -43,7 +42,6 @@ Input methods:
  * (ibus-gtk3)
  * (ibus-table)
  * (ibus-pinyin)
- * (ibus-pinyin-db-android)
 
 = Desktop GNOME Apps =
 
@@ -97,6 +95,7 @@ We've chosen GNOME as our desktop user interface of choice. Rather than using th
  * (totem)
  * (totem-mozilla)
  * ubuntu-release-upgrader-gtk
+ * ubuntu-sso-client-qt # because software-center uses it for comments/purchases/oneconf, and there is no GTK+ edition
  * update-manager
  * update-notifier
  * (vino) # vnc server
@@ -296,3 +295,7 @@ Extras that Vinux users want.
 # End-user applications to be shipped in vinux
 
  * (python3-aptdaemon.pkcompat) # needed to keep packagekit off the images
+ * xserver-xorg-lts-utopic
+ * libegl1-mesa-drivers-lts-utopic
+ * xserver-xorg-video-all-lts-utopic
+ * xserver-xorg-video-geode-lts-utopic [i386]
