@@ -295,7 +295,5 @@ Extras that Vinux users want.
 # End-user applications to be shipped in vinux
 
  * (python3-aptdaemon.pkcompat) # needed to keep packagekit off the images
- * xserver-xorg-lts-utopic
- * libegl1-mesa-drivers-lts-utopic
- * xserver-xorg-video-all-lts-utopic
- * xserver-xorg-video-geode-lts-utopic [i386]
+ * xserver-xorg-lts-vivid
+ * xserver-xorg-video-all-lts-vivid
