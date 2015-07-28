@@ -209,7 +209,7 @@ Accessibility tools:
  * (mate-menus)
  * (mate-netspeed)
  * (mate-notification-daemon)
- * (mate-polkit)
+# * (mate-polkit)
  * (mate-power-manager)
  * (mate-screensaver)
  * (mate-sensors-applet)
