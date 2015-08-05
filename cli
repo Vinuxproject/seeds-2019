@@ -40,3 +40,6 @@ Task-Key: alpine
  * (wajig)
  * (wodim)
 
+Extra vinux packages.
+ * (vinux-default-settings-cli)
+ * (vinux-user-configs)
