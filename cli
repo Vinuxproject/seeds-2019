@@ -5,6 +5,7 @@ Task-Key: alpine
 
  * (aiksaurus)
  * (alpine)
+ * (avahi-daemon)
  *(brltty) 
  * (cfh) 
  * (chntpw)
@@ -12,11 +13,11 @@ Task-Key: alpine
  * (console-braille)
  * (dict)
  * (emacspeak)
+ * (espeakup)
  * [irssi]
  * (lfm)
  * (lynx-cur)
  * (mc)
- * (monitor-toggle) 
  * (mpg123)
  * (mplayer)
  * (nmap)
@@ -28,9 +29,9 @@ Task-Key: alpine
  * (sox)
  * (speakup)
  * (speakup-tools)
- * (speechd-up)
- * (speech-dispatcher) 
- * (speech-dispatcher-pico)
+# * (speechd-up)# running with espeakup to test for better functionality
+# * (speech-dispatcher) 
+# * (speech-dispatcher-pico)
  * (surfraw)
  * (talking-clock)
  * (term-readline-ttytter)
