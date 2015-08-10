@@ -24,6 +24,9 @@ Task-Key: alpine
  * (openssh-server)
  * (partimage) 
  * (pastebinit)
+ * (p7zip-full)
+ * (p7zip-rar)
+
  * (pdmenu)
  * (screen)
  * (sox)
