@@ -13,6 +13,7 @@ Task-Key: alpine
  * (console-braille)
  * (dict)
  * (emacspeak)
+ * (espeak)
  * (espeakup)
  * [irssi]
  * (lfm)
