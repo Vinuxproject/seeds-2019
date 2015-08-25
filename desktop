@@ -257,7 +257,8 @@ to compile a driver. -mdz
  * vinux-desktop # metapackage for everything here
 # * (example-content) # dholbach: dapper feature goal (wiki.ubuntu.com/ExampleContent)
  * (libwmf0.2-7-gtk)
- * (plymouth-theme-ubuntu-logo)
+ * (plymouth-theme-vinux-logo)
+ * (plymouth-theme-vinux-text)
 
 Extra vinux packages.
  * (vinux-default-settings)
