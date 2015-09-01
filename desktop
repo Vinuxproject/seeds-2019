@@ -269,6 +269,7 @@ Extra vinux packages.
  * (vinux-mate-settings)
 
 Extras that Vinux users want.
+ * (alarm-clock-applet)
  * (monitor-toggle)
  * (indicator-weather)
  * (orca-teacher)
