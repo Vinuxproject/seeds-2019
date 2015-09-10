@@ -6,7 +6,7 @@ Task-Key: alpine
  * (aiksaurus)
  * (alpine)
  * (avahi-daemon)
- *(brltty) 
+ * (brltty) 
  * (cfh) 
  * (chntpw)
  * (clamav)
@@ -15,7 +15,7 @@ Task-Key: alpine
  * (emacspeak)
  * (espeak)
  * (espeakup)
- * [irssi]
+ * (irssi)
  * (lfm)
  * (lynx-cur)
  * (mc)
