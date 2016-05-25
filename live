@@ -44,4 +44,4 @@ Some stuff needed for the live environment on Vinux.
 
  * Signed-Kernel-Stem: linux-signed linux-signed-image
 
- * ${Signed-Kernel-Stem}-generic-lts-xenial [amd64]
+ * ${Signed-Kernel-Stem}-generic-lts-wily [amd64]
