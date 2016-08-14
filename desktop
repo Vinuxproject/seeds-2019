@@ -15,23 +15,25 @@ Bluetooth:
 
 = Network Services =
 
-Basic network services and Windows integration.
+Basic network services, VPN and Windows integration.
 
  * (avahi-autoipd)     # IPv4 link-local interface configuration support
  * (network-manager-gnome) # see NetworkRoaming spec
- * (network-manager-pptp)
  * (network-manager-pptp-gnome)
  * (libproxy1-plugin-gsettings)
  * (libproxy1-plugin-networkmanager)
+ * (ppp)      # ppp utilities useful to be on a CD when someone needs them
+ * (pppconfig)
+ * (pppoeconf)
 
 = GUI infrastructure =
 
  * (xterm)                        # Provide a backup terminal and complete X env.
- * libnotify-bin		 # various scripts need notify-send (such as .bashrc's "alert")
+ * libnotify-bin                  # various scripts need notify-send (such as .bashrc's "alert")
 
 Extra fonts (should be common, but not so for space reasons):
 
- * (fonts-droid)
+ * (fonts-noto-cjk)
  * (fonts-nanum)
  * (fonts-liberation)
 
@@ -39,104 +41,125 @@ Input methods:
 
  * (im-config)
  * (ibus)
+ * (ibus-gtk)
  * (ibus-gtk3)
  * (ibus-table)
- * (ibus-pinyin)
 
-= Desktop GNOME Apps =
+= Desktop apps =
 
-We've chosen GNOME as our desktop user interface of choice. Rather than using the meta-packages they are deliberately expanded so that we can select things a bit better.
+We use many GNOME applications as part of our desktop user interface. Rather than using Debian's meta-packages they are deliberately expanded so that we can select things a bit better.
 
  * (apport-gtk)
- * (whoopsie)              # http://wiki.ubuntu.com/ErrorTracker - EvanDandrea
- * eog
- * (thunderbird) [!armhf]
- * (thunderbird-gnome-support) [!armhf]
- * file-roller
-# * (empathy)
-# * (telepathy-idle)        # basic IRC support for empathy
- * (pidgin)
- * (pidgin-microblog)
- * (purple-facebook)
- * (pidgin-data)
- * gnome-calculator
- * lightdm                 # Proposed GDM replacement for Oneiric, see https://blueprints.launchpad.net/ubuntu/+spec/desktop-o-lightdm
- * gedit
- * (gedit-plugins)
- * software-center
+ * (whoopsie)
+ * (eog)
+ * (thunderbird)
+ * (thunderbird-gnome-support)
+ * (file-roller)
+ * (gnome-calculator)
+ * lightdm
+ * (gedit)
  * (app-install-data-partner)
- * (transmission-gtk)       # simple GNOME frontend for bittorrent downloads
+ * (transmission-gtk)
  * unity-settings-daemon
  * unity-control-center
- * system-config-printer-gnome
  * gnome-menus
+ * (system-config-printer-gnome)
  * ubuntu-session
- * seahorse
- * (libpam-gnome-keyring)
- * gnome-system-monitor     # SebastienBacher
- * gnome-power-manager		# OliverGrawert finally ready for shipment
+ * (gnome-system-monitor)
+ * (gnome-power-manager)
  * (gnome-terminal)
- * baobab
- * gnome-screenshot
- * gnome-system-log
- * gnome-font-viewer
- * gucharmap               # SebastienBacher
+ * (baobab)
+ * (gnome-screenshot)
+ * (gnome-system-log)
+ * (gnome-font-viewer)
+ * (gucharmap)
+# XXX: ask QA if we need this in the desktop install or just live
  * checkbox-gui
- * language-selector-gnome # MichaelVogt
+ * language-selector-gnome
  * (firefox)
- * (xul-ext-ubufox)        # ubuntu firefox tweaks - AlexanderSack
- * nautilus                # SebastienBacher
- * nautilus-sendto
-# * (nautilus-share)
- * (audacious)
- * (brasero)		   # Oliver Grawert
+ * (xul-ext-ubufox)
+ * nautilus
+ * (nautilus-sendto)
+ * (nautilus-share)
+ * (rhythmbox)
  * (cheese)
- * ssh-askpass-gnome
- * software-properties-gtk # default GUI sources.list editor / extra drivers
+ * software-properties-gtk
  * (totem)
- * (totem-mozilla)
  * ubuntu-release-upgrader-gtk
- * ubuntu-sso-client-qt # because software-center uses it for comments/purchases/oneconf, and there is no GTK+ edition
  * update-manager
  * update-notifier
  * (vino) # vnc server
  * yelp
  * zenity
- * (xdg-utils)		   # useful utilities
+ * (xdg-utils)         # useful utilities
  * xdg-user-dirs
  * xdg-user-dirs-gtk
  * pulseaudio
  * (pulseaudio-module-x11)
  * (pulseaudio-module-bluetooth)
- * gvfs-bin			# mostly used as xdg-open backend
- * (gvfs-fuse)			# let non-GNOME apps see GVFS via fuse
+ * gvfs-bin             # mostly used as xdg-open backend
+ * (gvfs-fuse)          # let non-GNOME apps see GVFS via fuse
  * (gnome-disk-utility)
-# * (overlay-scrollbar)
+ * (simple-scan)
+ * (evince)
+ * (gnome-screensaver)
+ * (remmina)
+ * (shotwell)
+ * (usb-creator-gtk) [i386 amd64]
+ * (deja-dup)
+ * (gnome-calendar)
+ * xdiagnose
+ * (pidgin)
+ * (pidgin-microblog)
+ * (purple-facebook)
+ * (pidgin-data)
 
-Games: DOn't want these in Vinux, no use to those who can't see them.
+Software center
+ * (ubuntu-software)
+ * (python3-aptdaemon.pkcompat) # needed to keep packagekit off the images
+
+= Key management and signing =
+
+ * (gnome-keyring)
+ * (seahorse)
+ * (libpam-gnome-keyring)
+
+We use gnupg's pinentry support as of wily, instead of gnome-keyring as before.
+
+ * (gnupg-agent)
+
+Games: We only ship a few by default.
 # * (aisleriot)
 # * (gnome-mahjongg)
-# * (gnomine)
+# * (gnome-mines)
 # * (gnome-sudoku)
-# * (quadrapassel)
-# * (gbrainy)
-# * (branding-ubuntu)        # Ubuntu branding for some games
+# * (branding-ubuntu)       # Ubuntu branding for some games
+
+Default office suite: libreoffice
+
+ * (libreoffice-style-breeze)
+ * (libreoffice-gnome)
+ * (libreoffice-writer)
+ * (libreoffice-calc)
+ * (libreoffice-impress)
+ * (libreoffice-math)
+ * (libreoffice-ogltrans)
+ * (libreoffice-pdfimport)
 
 Themes: we will ship only the very best looking themes. We won't ship everything that Debian ships, just a custom package that includes the themes we want. These packages are included for size guidance until we have Ubuntu-specific packages.
 
  * ubuntu-artwork
  * fresh-and-clean
- * gnome-session-canberra	# Needed to make login/logout sounds audible.
+ * gnome-session-canberra   # Needed to make login/logout sounds audible.
  * dmz-cursor-theme
+ * (overlay-scrollbar-gtk2)
+
+Boot theme
+
+ * (plymouth-theme-ubuntu-logo)
 
 Settings: we have some settings overrides by default in an unique package.
  * ubuntu-settings
-
-The gstreamer0.10 packages we want to install until no gstreamer1.0 packages are on default media:
-
-# * gstreamer0.10-alsa
-# * gstreamer0.10-plugins-base-apps
-# * gstreamer0.10-pulseaudio
 
 The gstreamer1.0 packages we want to install:
 
@@ -158,60 +181,28 @@ Accessibility tools:
  * libatk-adaptor
  * (libgail-common)
  * (qt-at-spi)
+ * (a11y-profile-manager-indicator)
+ * (unity-accessibility-profiles)
  * (qt-at-spi:i386) [amd64]
-
-= Other Desktop GUI Apps =
-
- * (libreoffice-style-human) [!powerpc !armhf]
- * (libreoffice-gnome) [!powerpc !armhf]
- * (libreoffice-writer) [!powerpc !armhf]
- * (libreoffice-calc) [!powerpc !armhf]
- * (libreoffice-impress) [!powerpc !armhf]
- * (libreoffice-math) [!powerpc !armhf]
- * (libreoffice-ogltrans) [!powerpc !armhf]
- * (libreoffice-pdfimport) [!powerpc !armhf !armel]
- * (libreoffice-presentation-minimizer) [!powerpc !armhf !armel]
- * (libreoffice-help-en-gb)
- * (libreoffice-l10n-en-gb)
- * (simple-scan)
- * evince
- * (gnome-screensaver) # recommends to allow for xscreensaver to be used
-# * (remmina)
-# * (shotwell) # DOn't think blind people will be organising photos, can be added again later.
- * (usb-creator-gtk) [i386 amd64]
- * (deja-dup)
- * xdiagnose
 
 Desktop Experience:
  * unity
- * unity-greeter        # lightdm greeter for unity
- * notify-osd           # backend for libnotify
+ * unity-greeter
+ * notify-osd
  * (sni-qt)
- * (activity-log-manager-control-center)
- * (xul-ext-unity)
- * (xul-ext-webaccounts)
+ * (activity-log-manager)
+ * (zeitgeist-core)
+ * (zeitgeist-datahub)
+ * (unity-webapps-common)
 
 libqt4-sql recommends libqt4-sql-mysql | ...; lets pull in the smallest
 alternative to avoid pulling in the large MySQL bits
  * (libqt4-sql-sqlite)
 
-Online Services:
-# * (landscape-client-ui-install)
-
 = Documentation =
 
- * doc-base			# integrates with scrollkeeper
+ * doc-base         # integrates with scrollkeeper
  * (ubuntu-docs)
-
-= Development =
-
-Here we provide a minimal development environment sufficient to build kernel
-drivers, so that this is possible on the live CD and in scenarios where
-it is problematic to get these packages onto the installed system in order
-to compile a driver. -mdz
-
- * (gcc)
- * (make)
 
 = Other =
 
@@ -254,9 +245,3 @@ Extras that Vinux users want.
  * (openssh-server)
  * (cfh)
  * (gpodder)
-
-# End-user applications to be shipped in vinux
-
- * (python3-aptdaemon.pkcompat) # needed to keep packagekit off the images
- * xserver-xorg-lts-xenial
- * xserver-xorg-video-all-lts-xenial

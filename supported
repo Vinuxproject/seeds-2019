@@ -8,8 +8,6 @@ The following packages also have application translations, but are not
 using gettext, but a custom format. language-selector will install
 them as appropriate.
 
- * /^gimp-help-/
- * /^evolution-documentation-/
  * /^libreoffice-help-/
  * /^libreoffice-l10n-/
  * /^thunderbird-locale-/
@@ -128,10 +126,12 @@ Other dictionaries, word lists, and thesauri:
 
 Fonts installed on demand by language-selector:
 
+ * fonts-alee
  * fonts-arabeyes
  * fonts-arphic-ukai
  * fonts-arphic-uming
  * fonts-farsiweb
+ * fonts-indic
  * fonts-kacst
  * fonts-khmeros
  * fonts-lao
@@ -152,17 +152,7 @@ Fonts installed on demand by language-selector:
  * fonts-tibetan-machine
  * fonts-ukij-uyghur
  * fonts-unfonts-core
- * ttf-alee
- * ttf-bengali-fonts
- * ttf-devanagari-fonts
- * ttf-gujarati-fonts
- * ttf-kannada-fonts
- * ttf-malayalam-fonts
- * ttf-oriya-fonts
- * ttf-punjabi-fonts
- * ttf-tamil-fonts
- * ttf-telugu-fonts
- * ttf-wqy-zenhei
+ * fonts-wqy-zenhei
 
 Input methods installed on demand by language-selector:
 
@@ -178,40 +168,203 @@ Input methods installed on demand by language-selector:
 
 Transitional packages:
 
- * mahjongg			# needed in main until 14.04
- * qemu-common			# needed in main until 14.04
- * ifenslave-2.6		# needed in main until 14.04
- * iproute			# needed in main until 14.04
- * libaugeas-ruby1.8		# needed in main until 14.04
- * libaugeas-ruby1.9.1		# needed in main until 14.04
- * libcorosync4			# needed in main until 14.04
- * firefox-globalmenu		# needed in main until 14.04
- * thunderbird-globalmenu	# needed in main until 14.04
- * apache2.2-bin		# needed in main until 14.04
- * libnss-mdns-i386		# needed in main until 14.04
- * libmono-2.0-1		# needed in main until 14.04
- * mono-dmcs			# needed in main until 14.04
- * libwayland0			# needed in main until 14.04
- * libkadm5srv-mit8		# needed in main until 14.04
+ * upstart-bin			# Needed in main until after 15.04 ships
+ * upstart-sysv			# Keep in main until 16.04
 
-Transitional packages for upgrading 12.04.[1-9] with LTS enablement stacks to
-14.04 (remove them entirely in 14.10):
- * %xorg-lts-transitional
- * !xserver-xorg-video-geode-lts-quantal
- * !xserver-xorg-video-geode-lts-raring
- * !xserver-xorg-video-geode-lts-saucy
- * !xserver-xorg-input-mtrack-lts-quantal
- * !xserver-xorg-input-mtrack-lts-saucy
- * !xserver-xorg-input-mtrack-lts-raring
- * !xserver-xorg-input-kbd-lts-quantal
- * !xserver-xorg-input-kbd-lts-saucy
- * !xserver-xorg-input-kbd-lts-raring
- * !xserver-xorg-input-joystick-lts-quantal
- * !xserver-xorg-input-joystick-lts-saucy
- * !xserver-xorg-input-joystick-lts-raring
- * !xserver-xorg-input-joystick-dev-lts-quantal
- * !xserver-xorg-input-joystick-dev-lts-saucy
- * !xserver-xorg-input-joystick-dev-lts-raring
+Transitional packages for upgrading 14.04.[1-9] with LTS enablement stacks to
+16.04 (remove them entirely in 16.10):
+ * libegl1-mesa-dev-lts-utopic
+ * libegl1-mesa-dev-lts-vivid
+ * libegl1-mesa-dev-lts-wily
+ * libegl1-mesa-lts-utopic
+ * libegl1-mesa-lts-utopic-dbg
+ * libegl1-mesa-lts-vivid
+ * libegl1-mesa-lts-vivid-dbg
+ * libegl1-mesa-lts-wily
+ * libegl1-mesa-lts-wily-dbg
+ * libgbm1-lts-utopic
+ * libgbm1-lts-utopic-dbg
+ * libgbm1-lts-vivid
+ * libgbm1-lts-vivid-dbg
+ * libgbm1-lts-wily
+ * libgbm1-lts-wily-dbg
+ * libgbm-dev-lts-utopic
+ * libgbm-dev-lts-vivid
+ * libgbm-dev-lts-wily
+ * libgl1-mesa-dev-lts-utopic
+ * libgl1-mesa-dev-lts-vivid
+ * libgl1-mesa-dev-lts-wily
+ * libgl1-mesa-dri-lts-utopic
+ * libgl1-mesa-dri-lts-utopic-dbg
+ * libgl1-mesa-dri-lts-vivid
+ * libgl1-mesa-dri-lts-vivid-dbg
+ * libgl1-mesa-dri-lts-wily
+ * libgl1-mesa-dri-lts-wily-dbg
+ * libgl1-mesa-glx-lts-utopic
+ * libgl1-mesa-glx-lts-utopic-dbg
+ * libgl1-mesa-glx-lts-vivid
+ * libgl1-mesa-glx-lts-vivid-dbg
+ * libgl1-mesa-glx-lts-wily
+ * libgl1-mesa-glx-lts-wily-dbg
+ * libglapi-mesa-lts-utopic
+ * libglapi-mesa-lts-utopic-dbg
+ * libglapi-mesa-lts-vivid
+ * libglapi-mesa-lts-vivid-dbg
+ * libglapi-mesa-lts-wily
+ * libglapi-mesa-lts-wily-dbg
+ * libgles1-mesa-dev-lts-utopic
+ * libgles1-mesa-dev-lts-vivid
+ * libgles1-mesa-dev-lts-wily
+ * libgles1-mesa-lts-utopic
+ * libgles1-mesa-lts-utopic-dbg
+ * libgles1-mesa-lts-vivid
+ * libgles1-mesa-lts-vivid-dbg
+ * libgles1-mesa-lts-wily
+ * libgles1-mesa-lts-wily-dbg
+ * libgles2-mesa-dev-lts-utopic
+ * libgles2-mesa-dev-lts-vivid
+ * libgles2-mesa-dev-lts-wily
+ * libgles2-mesa-lts-utopic
+ * libgles2-mesa-lts-utopic-dbg
+ * libgles2-mesa-lts-vivid
+ * libgles2-mesa-lts-vivid-dbg
+ * libgles2-mesa-lts-wily
+ * libgles2-mesa-lts-wily-dbg
+ * libopenvg1-mesa-dev-lts-utopic
+ * libopenvg1-mesa-lts-utopic
+ * libwayland-egl1-mesa-lts-utopic
+ * libwayland-egl1-mesa-lts-utopic-dbg
+ * libwayland-egl1-mesa-lts-vivid
+ * libwayland-egl1-mesa-lts-vivid-dbg
+ * libwayland-egl1-mesa-lts-wily
+ * libwayland-egl1-mesa-lts-wily-dbg
+ * libxatracker2-lts-utopic
+ * libxatracker2-lts-utopic-dbg
+ * libxatracker2-lts-vivid
+ * libxatracker2-lts-vivid-dbg
+ * libxatracker2-lts-wily
+ * libxatracker2-lts-wily-dbg
+ * libxatracker-dev-lts-utopic
+ * libxatracker-dev-lts-vivid
+ * libxatracker-dev-lts-wily
+ * mesa-common-dev-lts-utopic
+ * mesa-common-dev-lts-vivid
+ * mesa-common-dev-lts-wily
+ * mesa-vdpau-drivers-lts-utopic
+ * mesa-vdpau-drivers-lts-utopic-dbg
+ * mesa-vdpau-drivers-lts-vivid
+ * mesa-vdpau-drivers-lts-vivid-dbg
+ * mesa-vdpau-drivers-lts-wily
+ * mesa-vdpau-drivers-lts-wily-dbg
+ * xserver-xorg-core-lts-utopic
+ * xserver-xorg-core-lts-utopic-dbg
+ * xserver-xorg-core-lts-vivid
+ * xserver-xorg-core-lts-vivid-dbg
+ * xserver-xorg-core-lts-wily
+ * xserver-xorg-core-lts-wily-dbg
+ * xserver-xorg-dev-lts-utopic
+ * xserver-xorg-dev-lts-vivid
+ * xserver-xorg-dev-lts-wily
+ * xserver-xorg-input-all-lts-utopic
+ * xserver-xorg-input-all-lts-vivid
+ * xserver-xorg-input-all-lts-wily
+ * xserver-xorg-input-evdev-dev-lts-utopic
+ * xserver-xorg-input-evdev-dev-lts-vivid
+ * xserver-xorg-input-evdev-dev-lts-wily
+ * xserver-xorg-input-evdev-lts-utopic
+ * xserver-xorg-input-evdev-lts-utopic-dbg
+ * xserver-xorg-input-evdev-lts-vivid
+ * xserver-xorg-input-evdev-lts-vivid-dbg
+ * xserver-xorg-input-evdev-lts-wily
+ * xserver-xorg-input-evdev-lts-wily-dbg
+ * xserver-xorg-input-kbd-lts-utopic
+ * xserver-xorg-input-kbd-lts-vivid
+ * xserver-xorg-input-kbd-lts-wily
+ * xserver-xorg-input-mouse-lts-utopic
+ * xserver-xorg-input-mouse-lts-vivid
+ * xserver-xorg-input-mouse-lts-wily
+ * xserver-xorg-input-synaptics-dev-lts-utopic
+ * xserver-xorg-input-synaptics-dev-lts-vivid
+ * xserver-xorg-input-synaptics-dev-lts-wily
+ * xserver-xorg-input-synaptics-lts-utopic
+ * xserver-xorg-input-synaptics-lts-utopic-dbg
+ * xserver-xorg-input-synaptics-lts-vivid
+ * xserver-xorg-input-synaptics-lts-vivid-dbg
+ * xserver-xorg-input-synaptics-lts-wily
+ * xserver-xorg-input-synaptics-lts-wily-dbg
+ * xserver-xorg-input-vmmouse-lts-utopic
+ * xserver-xorg-input-vmmouse-lts-vivid
+ * xserver-xorg-input-vmmouse-lts-wily
+ * xserver-xorg-input-wacom-lts-utopic
+ * xserver-xorg-input-wacom-lts-utopic-dbg
+ * xserver-xorg-input-wacom-lts-vivid
+ * xserver-xorg-input-wacom-lts-vivid-dbg
+ * xserver-xorg-input-wacom-lts-wily
+ * xserver-xorg-input-wacom-lts-wily-dbg
+ * xserver-xorg-lts-utopic
+ * xserver-xorg-lts-vivid
+ * xserver-xorg-lts-wily
+ * xserver-xorg-video-all-lts-utopic
+ * xserver-xorg-video-all-lts-vivid
+ * xserver-xorg-video-all-lts-wily
+ * xserver-xorg-video-ati-lts-utopic
+ * xserver-xorg-video-ati-lts-utopic-dbg
+ * xserver-xorg-video-ati-lts-vivid
+ * xserver-xorg-video-ati-lts-vivid-dbg
+ * xserver-xorg-video-ati-lts-wily
+ * xserver-xorg-video-ati-lts-wily-dbg
+ * xserver-xorg-video-dummy-lts-utopic
+ * xserver-xorg-video-dummy-lts-vivid
+ * xserver-xorg-video-dummy-lts-wily
+ * xserver-xorg-video-fbdev-lts-utopic
+ * xserver-xorg-video-fbdev-lts-vivid
+ * xserver-xorg-video-fbdev-lts-wily
+ * xserver-xorg-video-intel-lts-utopic
+ * xserver-xorg-video-intel-lts-utopic-dbg
+ * xserver-xorg-video-intel-lts-vivid
+ * xserver-xorg-video-intel-lts-vivid-dbg
+ * xserver-xorg-video-intel-lts-wily
+ * xserver-xorg-video-intel-lts-wily-dbg
+ * xserver-xorg-video-modesetting-lts-utopic
+ * xserver-xorg-video-modesetting-lts-utopic-dbg
+ * xserver-xorg-video-nouveau-lts-utopic
+ * xserver-xorg-video-nouveau-lts-utopic-dbg
+ * xserver-xorg-video-nouveau-lts-vivid
+ * xserver-xorg-video-nouveau-lts-vivid-dbg
+ * xserver-xorg-video-nouveau-lts-wily
+ * xserver-xorg-video-nouveau-lts-wily-dbg
+ * xserver-xorg-video-qxl-lts-utopic
+ * xserver-xorg-video-qxl-lts-utopic-dbg
+ * xserver-xorg-video-qxl-lts-vivid
+ * xserver-xorg-video-qxl-lts-vivid-dbg
+ * xserver-xorg-video-qxl-lts-wily
+ * xserver-xorg-video-qxl-lts-wily-dbg
+ * xserver-xorg-video-radeon-lts-utopic
+ * xserver-xorg-video-radeon-lts-utopic-dbg
+ * xserver-xorg-video-radeon-lts-vivid
+ * xserver-xorg-video-radeon-lts-vivid-dbg
+ * xserver-xorg-video-radeon-lts-wily
+ * xserver-xorg-video-radeon-lts-wily-dbg
+ * xserver-xorg-video-s3-lts-utopic
+ * xserver-xorg-video-s3-lts-vivid
+ * xserver-xorg-video-s3-lts-wily
+ * xserver-xorg-video-vesa-lts-utopic
+ * xserver-xorg-video-vesa-lts-vivid
+ * xserver-xorg-video-vesa-lts-wily
+ * xserver-xorg-video-vmware-lts-utopic
+ * xserver-xorg-video-vmware-lts-vivid
+ * xserver-xorg-video-vmware-lts-wily
+
+ * Extra-Exclude: libegl1-mesa-drivers-lts-utopic-dbg
+ * Extra-Exclude: xserver-xorg-video-r128-lts-utopic-dbg
+ * Extra-Exclude: xserver-xorg-video-r128-lts-vivid-dbg
+ * Extra-Exclude: xserver-xorg-video-r128-lts-wily-dbg
+ * Extra-Exclude: xserver-xorg-video-openchrome-lts-utopic-dbg
+ * Extra-Exclude: xserver-xorg-video-openchrome-lts-vivid-dbg
+ * Extra-Exclude: xserver-xorg-video-openchrome-lts-wily-dbg
+ * Extra-Exclude: xserver-xorg-video-mach64-lts-utopic-dbg
+ * Extra-Exclude: xserver-xorg-video-mach64-lts-vivid-dbg
+ * Extra-Exclude: xserver-xorg-video-mach64-lts-wily-dbg
 
 = Installed on demand =
 
@@ -220,27 +373,11 @@ Transitional packages for upgrading 12.04.[1-9] with LTS enablement stacks to
  * apparmor-profiles
  * libapache2-mod-apparmor
  * libpam-apparmor
- * python-libapparmor
  * python3-libapparmor
- * python-ufw
  * libseccomp-dev    # promote its use, LP: #1082431
  * auditd
  * click             # temporary, until touch packages are all in main
  * click-dev
- * unity-settings-daemon #temporary, until ubuntu-desktop transitions from gsettings-daemon
-
-= Extra server bits =
-
- * postgresql-plperl-9.3
- * postgresql-plpython-9.3
- * postgresql-plpython3-9.3
- * postgresql-pltcl-9.3
- * hv-kvp-daemon-init
- * cloud-utils
- * nginx
- * joyent-mdata-client
- * sssd
- * sssd-tools
 
 = Rescued from Extra =
 
@@ -250,13 +387,12 @@ Transitional packages for upgrading 12.04.[1-9] with LTS enablement stacks to
 automatically (note that Extra-Exclude *only* prevents packages from being
 included due to matching Extra-Include patterns, and has no other effect):
 
- * Extra-Exclude: libstdc++6-doc libstdc++6-dev libstdc++6-dbg lib*stdc++6-4.1* lib*stdc++6-4.2* lib*stdc++6-4.3*
+ * Extra-Exclude: libstdc++6-doc libstdc++6-dev libstdc++6-dbg lib*stdc++6-4.[4-9]*
  * Extra-Exclude: libgnat*-dev libgnat*-dbg gnat*-doc
  * Extra-Exclude: gpc*-doc
- * Extra-Exclude: lib*mudflap*
- * Extra-Exclude: gfortran-4.1-doc gfortran-4.2-doc gfortran-4.3-doc lib*gfortran1-dbg
- * Extra-Exclude: lib*go0-dbg
- * Extra-Exclude: lib*objc1-dbg
+ * Extra-Exclude: gfortran-4.[4-9]-doc
+ * Extra-Exclude: lib*go[0-9]*-dbg
+ * Extra-Exclude: lib*objc[1-3]-dbg
  * Extra-Exclude: lldb-* clang* libclang* libllvm-*
  * Extra-Exclude: libavformat-dev libpostproc-dev
  * Extra-Exclude: libgdchart-gd2-xpm-dev
@@ -264,7 +400,7 @@ included due to matching Extra-Include patterns, and has no other effect):
  * Extra-Exclude: libmpich-mpd1.0-dev libmpich-shmem1.0-dev
  * Extra-Exclude: libnetpbm9-dev
  * Extra-Exclude: libavahi-compat-howl-dev
- * Extra-Exclude: libboost-*-dev
+ * Extra-Exclude: libboost-*-dev libboost*-all-dev
  * Extra-Exclude: libcairo-directfb2-dev
  * Extra-Exclude: libcdio-*-dev libiso9660-dev
  * Extra-Exclude: libxaw6*		# built from the same source as libxaw7*
@@ -295,6 +431,10 @@ included due to matching Extra-Include patterns, and has no other effect):
  * Extra-Exclude: ubuntu-ui-toolkit-examples
  * Extra-Exclude: speech-dispatcher-dbg
  * Extra-Exclude: nginx-extras-dbg nginx-full-dbg nginx-light-dbg nginx-naxsi-dbg
+ * Extra-Exclude: haproxy-doc # https://lists.ubuntu.com/archives/ubuntu-release/2014-July/002966.html
+ * Extra-Exclude: grilo-plugins-0.2-dbg
+ * Extra-Exclude: remmina-dbg
+ * Extra-Exclude: tracker-dbg
 
 Transitional packages:
 
@@ -320,17 +460,19 @@ Exclude some KDE-specific pieces:
 
 Temporary workarounds:
 
- * libreoffice-evolution # no rdepends any more, noticed too late
  * openjade # (b-d of opensp, avoid component-mismatch on openjade-1.3)
 
 = Build infrastructure =
 
  * pkgbinarymangler # needs to be in main to stay in the buildd chroots
 
+= Dynamically installed by deja-dup (to avoid python2 on image) =
+
+ * duplicity
+ * python-gi
+
 = Other =
 
- * icedtea-plugin
- * evolution # still supported for business environment
  * miscfiles
  * sosreport # AdamStokes LP: #1206106
  * nvidia-prime

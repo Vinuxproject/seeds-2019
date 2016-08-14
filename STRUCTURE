@@ -1,4 +1,4 @@
-include platform.trusty
+include platform.xenial
 desktop: desktop-common
 image-processing: desktop
 audio-processing: desktop
@@ -16,5 +16,6 @@ usb-live: usb live-common
 usb-langsupport: usb-live
 usb-ship-live: usb-langsupport
 supported-desktop-extra: usb-live
+system-image: boot
 # make sure supported remains the last entry
 supported: ship-live usb-live language-packs supported-desktop-extra
