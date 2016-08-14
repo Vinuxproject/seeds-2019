@@ -299,5 +299,5 @@ Extras that Vinux users want.
 # End-user applications to be shipped in vinux
 
  * (python3-aptdaemon.pkcompat) # needed to keep packagekit off the images
- * xserver-xorg-lts-wily
- * xserver-xorg-video-all-lts-wily
+ * xserver-xorg-lts-xenial
+ * xserver-xorg-video-all-lts-xenial
