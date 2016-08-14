@@ -182,50 +182,10 @@ Accessibility tools:
  * (deja-dup)
  * xdiagnose
 
-== Mate Desktop ==
-
- * (mate-desktop-environment-core)
- * (mate-gnome-main-menu-applet)
- * (mate-media-pulse)
- * (mate-settings-daemon-pulse)
- * (blueman)
- * (caja)
- * (caja-gksu)
- * (caja-open-terminal)
- * (caja-sendto))
- * (dconf-editor)
- * (engrampa)
- * (eom)
- * (galculator)
- * (gksu)
- * (gnome-keyring)
- * (gnome-system-tools)
- * (indicator-application-gtk2)
- * (indicator-sound-gtk2)
- * (libp11-kit-gnome-keyring)
- * (marco)
- * (mate-applets)
- * (mate-icon-theme)
- * (mate-icon-theme-faenza)
- * (mate-indicator-applet)
- * (mate-menus)
- * (mate-netspeed)
- * (mate-notification-daemon)
-# * (mate-polkit)
- * (mate-power-manager)
- * (mate-screensaver)
- * (mate-sensors-applet)
- * (mate-system-monitor)
- * (mate-themes)
- * (mate-utils)
- * (matemenu)
- * (mozo)
-
 Desktop Experience:
  * unity
  * unity-greeter        # lightdm greeter for unity
  * notify-osd           # backend for libnotify
- * (gnome-shell)        # alternative accessible desktop environment.
  * (sni-qt)
  * (activity-log-manager-control-center)
  * (xul-ext-unity)
@@ -267,7 +227,6 @@ Extra vinux packages.
  * (vinux-desktop-settings)
  * (vinux-wallpapers)
  * (vinux-user-configs)
- * (vinux-mate-settings)
 
 Extras that Vinux users want.
  * (alarm-clock-applet)
