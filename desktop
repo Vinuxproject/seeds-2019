@@ -209,15 +209,15 @@ alternative to avoid pulling in the large MySQL bits
  * vinux-desktop # metapackage for everything here
 # * (example-content) # dholbach: dapper feature goal (wiki.ubuntu.com/ExampleContent)
  * (libwmf0.2-7-gtk)
- * (plymouth-theme-vinux-logo)
- * (plymouth-theme-vinux-text)
+# * (plymouth-theme-vinux-logo)
+# * (plymouth-theme-vinux-text)
 
 Extra vinux packages.
- * (vinux-default-settings)
- * (vinux-keyboard-shortcuts)
- * (vinux-desktop-settings)
- * (vinux-wallpapers)
- * (vinux-user-configs)
+# * (vinux-default-settings)
+# * (vinux-keyboard-shortcuts)
+# * (vinux-desktop-settings)
+# * (vinux-wallpapers)
+# * (vinux-user-configs)
 
 Extras that Vinux users want.
  * (alarm-clock-applet)

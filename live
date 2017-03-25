@@ -90,7 +90,7 @@ These packages make up the Ubiquity live installer.
  * ubiquity-frontend-gtk
  * ubiquity-ubuntu-artwork
 # * ubiquity-slideshow-ubuntu
- * vinux-live-settings
+# * vinux-live-settings
  * a11y-profile-manager
 
 == Misc ==
