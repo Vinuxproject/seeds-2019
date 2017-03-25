@@ -156,7 +156,7 @@ Themes: we will ship only the very best looking themes. We won't ship everything
 
 Boot theme
 
- * (plymouth-theme-ubuntu-logo)
+# * (plymouth-theme-ubuntu-logo)
 
 Settings: we have some settings overrides by default in an unique package.
  * ubuntu-settings
