@@ -239,7 +239,7 @@ Extras that Vinux users want.
  * (speech-dispatcher-pico)
  * (console-braille)
  * (nautilus-share)
- * (aptoncd)
+# * (aptoncd)
  * (clamtk)
  * (nautilus-clamscan)
  * (openssh-server)
